@@ -1,1 +1,4 @@
 @import "tailwindcss";
+
+/* Import js config. its no more detected automatically in v4 */
+@config "../tailwind.config.js";
