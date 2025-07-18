@@ -1,9 +1,11 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 function App() {
+  const { t } = useTranslation("home");
   return (
     <>
-      <h1 class="text-3xl font-bold underline"> ANIS </h1>
+      <h1 class="text-3xl font-bold underline"> {t("hero.title")} </h1>
 
       <button className="bg-green-islamic text-cream hover:bg-green-dark bg-primary">
         Donate Now
