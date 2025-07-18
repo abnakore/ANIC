@@ -1,0 +1,16 @@
+{
+    "hero": {
+        "title": "Welcome to ANIC",
+        "subtitle": "Promoting Islamic Education and Values",
+        "cta": "Learn More About Our Mission"
+    },
+    "features": {
+        "title": "Our Services",
+        "items": {
+            "mosque": "Daily Prayers & Jumu'ah",
+            "school": "Islamic School",
+            "dawah": "Dawah Programs",
+            "charity": "Charity Initiatives"
+        }
+    }
+}
