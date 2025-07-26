@@ -29,6 +29,9 @@ export default {
         sans: ["'Open Sans'", "sans-serif"], // Example font
         arabic: ["'Amiri'", "serif"], // For Arabic text
       },
+      animation: {
+        "pulse-slow": "pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+      },
     },
   },
   plugins: [],

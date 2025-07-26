@@ -1,0 +1,19 @@
+@reference "../../index.css"
+
+.service-card {
+    @apply transition-all duration-300;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.service-icon {
+    @apply transition-all duration-300;
+}
+
+.service-card:hover .service-icon {
+    transform: scale(1.1) rotate(5deg);
+    @apply text-gold;
+}

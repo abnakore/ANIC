@@ -1,17 +1,21 @@
-import { useState } from "react";
-import { useTranslation } from "react-i18next";
+import React from "react";
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import About from "./pages/About/About";
+import HomePage from "./pages/test";
 
 function App() {
-  const { t } = useTranslation("home");
   return (
     <>
-      <h1 class="text-3xl font-bold underline"> {t("hero.title")} </h1>
-
-      <button className="bg-green-islamic text-cream hover:bg-green-dark bg-primary">
-        Donate Now
-      </button>
-
-      <div className="border-2 border-gold-light p-4">...</div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Home />} />
+        <Route path="/calender" element={<Home />} />
+        <Route path="/donate" element={<Home />} />
+        {/* !!! Remove it */}
+        <Route path="/test" element={<HomePage />} />
+      </Routes>
     </>
   );
 }

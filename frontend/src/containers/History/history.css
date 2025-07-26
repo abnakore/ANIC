@@ -1,0 +1,16 @@
+.timeline-dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  @apply absolute left-1/2 transform -translate-x-1/2;
+}
+
+.timeline-line {
+  transform: translateX(-50%);
+}
+
+.timeline-content::before {
+  content: "";
+}
+
+/*# sourceMappingURL=history.css.map */

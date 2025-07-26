@@ -1,0 +1,21 @@
+// @reference "tailwindcss";
+
+.timeline-dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    @apply absolute left-1/2 transform -translate-x-1/2;
+}
+
+.timeline-line {
+    transform: translateX(-50%);
+}
+
+.timeline-content {
+    // @apply relative pl-12 md:pl-16;
+}
+
+.timeline-content::before {
+    content: "";
+    // @apply absolute left-0 top-2 w-8 h-8 bg-light-gold rounded-full flex items-center justify-center;
+}

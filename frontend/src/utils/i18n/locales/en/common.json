@@ -1,0 +1,27 @@
+{
+    "title": "Abubakar Nakore Islamic Center",
+    "navBar": {
+        "home": "Home",
+        "about": "About",
+        "contact": "Contact",
+        "calender": "Calender",
+        "services": "Services",
+        "donate": "Donate"
+    },
+    "footer": {
+        "subtitle": "Promoting Islamic education and values in Babura community.",
+        "quickLinks": "Quick Links",
+        "contactUs": "Contact Us",
+        "newsletter": "Newsletter",
+        "newsletterSubtitle": "Subscribe to our newsletter for updates",
+        "emailPlaceholder": "Your email"
+    },
+    "address": "Nakore House, Kofar Gabas, Babura, Babura LGA, Jigawa State.",
+    "phoneNo": "+234 803 255 8543",
+    "learn_more": "Learn More",
+    "visitUs": "Visit Us",
+    "donate": "Donate Now",
+    "volunteer": "Volunteer",
+    "contactUs": "Contact Us",
+    "copyright": "© {{year}} Abubakar Nakore Islamic Center. All rights reserved."
+}

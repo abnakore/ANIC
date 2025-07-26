@@ -3,27 +3,38 @@ import { initReactI18next } from "react-i18next";
 
 // Import all the translations
 import enHome from "./locales/en/home.json";
+import enCommon from "./locales/en/common.json";
 import haHome from "./locales/ha/home.json";
 import arHome from "./locales/ar/home.json";
 
 // the translations
 // (tip move them in a JSON file and import them,
 // or even better, manage them via a UI: https://react.i18next.com/guides/multiple-translation-files#manage-your-translations-with-a-management-gui)
+export const LANGUAGES = [
+  { key: "en", value: "English" },
+  { key: "ar", value: "العربية" },
+  { key: "ha", value: "Hausa" },
+];
 const resources = {
   en: {
     // translation: {
     //   welcomeMessage: "Welcome",
     // },
     home: enHome,
+    common: enCommon,
   },
   ha: {
     // translation: {
     //   welcomeMessage: "Barka da zuwa",
     // },
     home: haHome,
+    common: enCommon,
+    nav: enNav,
   },
   ar: {
     home: arHome,
+    common: enCommon,
+    nav: enNav,
   },
 };
 
@@ -33,7 +44,7 @@ i18n
     resources,
     lng: "en", // if you're using a language detector, do not define the lng option
     fallbackLng: "en",
-    ns: ["home"], // All namespaces ("common", "home", "about")
+    ns: ["home", "common", "nav"], // All namespaces ("common", "home", "about")
     interpolation: {
       escapeValue: false, // react already safes from xss => https://www.i18next.com/translation-function/interpolation#unescape
     },
