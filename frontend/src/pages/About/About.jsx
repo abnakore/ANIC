@@ -4,7 +4,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { Link, useNavigate } from "react-router-dom";
 
-import { FaBullseye, FaEye } from "react-icons/fa";
+import { FaBullseye, FaEye, FaInfoCircle, FaTasks } from "react-icons/fa";
 import { FaUserGear, FaUsersGear, FaUserShield } from "react-icons/fa6";
 
 // Components
@@ -17,12 +17,42 @@ import LeaderCard from "../../components/LeaderCard/LeaderCard";
 
 // Styles
 import "./about.css";
+import CTA from "../../containers/CTA";
 
 function About() {
   const { t, i18n } = useTranslation("about");
 
   // UseNavigate
   const navigate = useNavigate();
+
+  // Trustees responsibilities
+  const responsibilities = t("governance.trustee.responsibilities.items", {
+    returnObjects: true,
+  });
+
+  // Management composition
+  const managementComposition = t("governance.management.composition.items", {
+    returnObjects: true,
+  });
+
+  // Trustee members
+  const trusteeMembers = Object.entries(
+    t("governance.trustee.members", {
+      returnObjects: true,
+    })
+  ).map(([key, member]) => ({ ...member }));
+
+  // Management members
+  const managementMembers = Object.entries(
+    t("governance.management.members", {
+      returnObjects: true,
+    })
+  ).map(([key, member]) => ({ ...member }));
+
+  // Society Impacts
+  const societyImpact = t("impact.items", {
+    returnObjects: true,
+  });
 
   return (
     <div className="islamic-pattern">
@@ -37,17 +67,23 @@ function About() {
 
         <div className="container mx-auto relative z-10 max-w-4xl text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-green-islamic mb-6">
-            
+            {t("hero.title")}
           </h1>
-          <p className="text-xl text-black-rich mb-8">
-            
-          </p>
+          <p className="text-xl text-black-rich mb-8">{t("hero.subtitle")}</p>
           <div className="flex justify-center space-x-4">
-            <Button theme="" title={"Our History"} handleClick={() => {}} />
+            <Button
+              theme=""
+              title={t("common:ourHistory")}
+              handleClick={() =>
+                (location.href = location.pathname + "#history")
+              }
+            />
             <Button
               theme="other"
-              title={"Our Leadership"}
-              handleClick={() => {}}
+              title={t("common:ourLeadership")}
+              handleClick={() =>
+                (location.href = location.pathname + "#leadership")
+              }
             />
           </div>
         </div>
@@ -59,20 +95,14 @@ function About() {
           <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
             <MissionCard
               icon={<FaBullseye />}
-              title={"Our Mission"}
-              text={`To establish a vibrant Islamic community that promotes faith,
-                knowledge, and service. We strive to be a beacon of Islamic
-                values, providing spiritual guidance, educational resources, and
-                community support for Muslims in Babura and beyond.`}
+              title={t("mission.title")}
+              text={t("mission.statement")}
             />
 
             <MissionCard
               icon={<FaEye />}
-              title={"Our Vision"}
-              text={`To create a sustainable Islamic ecosystem where every Muslim can
-                grow spiritually, intellectually, and socially. We envision a
-                future where our center serves as a model for Islamic excellence
-                and community development throughout Nigeria.`}
+              title={t("vision.title")}
+              text={t("vision.statement")}
             />
           </div>
         </div>
@@ -86,14 +116,13 @@ function About() {
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-green-islamic mb-4">
-              <span className="font-arabic text-4xl block mb-4">
+              {/* <span className="font-arabic text-4xl block mb-4">
                 هيكل الحوكمة
-              </span>
-              Governance Structure
+              </span> */}
+              {t("governance.title")}
             </h2>
             <p className="text-xl text-black-rich max-w-3xl mx-auto">
-              Our organizational structure ensures transparent and effective
-              management according to Islamic principles
+              {t("governance.subtitle")}
             </p>
           </div>
 
@@ -105,45 +134,38 @@ function About() {
                   <FaUserShield />
                 </div>
                 <h3 className="text-2xl font-bold text-white">
-                  Board of Trustees
+                  {t("governance.trustee.title")}
                 </h3>
                 <p className="text-gold-light font-medium">
-                  Policy & Oversight
+                  {t("governance.trustee.subtitle")}
                 </p>
               </div>
               <div className="p-8">
                 <p className="text-black-rich mb-6">
-                  The Board of Trustees consists of at least five members of
-                  proven integrity, with at least one member from the progeny of
-                  the late AN.
+                  {t("governance.trustee.brief")}
                 </p>
 
                 <div className="mb-6">
                   <h4 className="text-lg font-bold text-green-islamic mb-3 flex items-center">
-                    <i className="fas fa-tasks text-gold mr-2"></i>
-                    Responsibilities:
+                    <FaTasks className="text-gold mr-2" />
+                    {t("governance.trustee.responsibilities.title")}:
                   </h4>
                   <ul className="space-y-2 pl-6">
-                    <li className="relative before:content-['•'] before:text-gold before:absolute before:-left-4">
-                      Make main policy decisions for the Center
-                    </li>
-                    <li className="relative before:content-['•'] before:text-gold before:absolute before:-left-4">
-                      Appoint members to the Board of Management
-                    </li>
-                    <li className="relative before:content-['•'] before:text-gold before:absolute before:-left-4">
-                      Ratify quarterly audit reports
-                    </li>
-                    <li className="relative before:content-['•'] before:text-gold before:absolute before:-left-4">
-                      Replace deceased, dismissed or resigned members
-                    </li>
+                    {responsibilities.map((responsibility, key) => (
+                      <li
+                        key={key}
+                        className="relative before:content-['•'] before:text-gold before:absolute before:-left-4"
+                      >
+                        {responsibility}
+                      </li>
+                    ))}
                   </ul>
                 </div>
 
                 <div className="bg-cream p-4 rounded-lg border-l-4 border-gold">
                   <p className="text-sm text-black-rich">
-                    <i className="fas fa-info-circle text-gold mr-2"></i>
-                    Members are selected based on proven integrity and
-                    commitment to Islamic values
+                    <FaInfoCircle className="text-gold mr-2" />
+                    {t("governance.trustee.quote")}
                   </p>
                 </div>
               </div>
@@ -156,54 +178,38 @@ function About() {
                   <FaUsersGear />
                 </div>
                 <h3 className="text-2xl font-bold text-white">
-                  Board of Management
+                  {t("governance.management.title")}
                 </h3>
                 <p className="text-gold-light font-medium">
-                  Day-to-Day Operations
+                  {t("governance.management.subtitle")}
                 </p>
               </div>
               <div className="p-8">
                 <p className="text-black-rich mb-6">
-                  The Board of Management consists of at least eleven members
-                  responsible for daily operations and accountable to the Board
-                  of Trustees.
+                  {t("governance.management.brief")}
                 </p>
 
                 <div className="mb-6">
                   <h4 className="text-lg font-bold text-green-islamic mb-3 flex items-center">
                     <i className="fas fa-users text-gold mr-2"></i>
-                    Composition:
+                    {t("governance.management.composition.title")}:
                   </h4>
                   <ul className="space-y-2 pl-6">
-                    <li className="relative before:content-['•'] before:text-gold before:absolute before:-left-4">
-                      Imam
-                    </li>
-                    <li className="relative before:content-['•'] before:text-gold before:absolute before:-left-4">
-                      Head Teacher
-                    </li>
-                    <li className="relative before:content-['•'] before:text-gold before:absolute before:-left-4">
-                      Accountant
-                    </li>
-                    <li className="relative before:content-['•'] before:text-gold before:absolute before:-left-4">
-                      PTA Chairman
-                    </li>
-                    <li className="relative before:content-['•'] before:text-gold before:absolute before:-left-4">
-                      AN Family Representatives
-                    </li>
-                    <li className="relative before:content-['•'] before:text-gold before:absolute before:-left-4">
-                      JIBWIS Representative
-                    </li>
-                    <li className="relative before:content-['•'] before:text-gold before:absolute before:-left-4">
-                      Community Members
-                    </li>
+                    {managementComposition.map((member, key) => (
+                      <li
+                        key={key}
+                        className="relative before:content-['•'] before:text-gold before:absolute before:-left-4"
+                      >
+                        {member}
+                      </li>
+                    ))}
                   </ul>
                 </div>
 
                 <div className="bg-cream p-4 rounded-lg border-l-4 border-gold">
                   <p className="text-sm text-black-rich">
-                    <i className="fas fa-info-circle text-gold mr-2"></i>
-                    The Board of Management implements policies set by the Board
-                    of Trustees
+                    <FaInfoCircle className="text-gold mr-2" />
+                    {t("governance.management.quote")}
                   </p>
                 </div>
               </div>
@@ -215,15 +221,14 @@ function About() {
             <div className="inline-flex items-center bg-gold-light/30 px-6 py-3 rounded-full">
               <div className="crescent bg-gold mr-3 before:bg-green-islamic"></div>
               <p className="font-bold text-green-islamic">
-                The Board of Management is responsible to the Board of Trustees
-                • No person serves on both boards simultaneously
+                {t("governance.relationshipNote")}
               </p>
             </div>
             <Link
-              href="/constitution.pdf"
+              to="/constitution"
               className="text-gold hover:underline block"
             >
-              Read Full Constitution →
+              {t("governance.readFull")}
             </Link>
           </div>
         </div>
@@ -236,140 +241,48 @@ function About() {
       >
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center text-green-islamic mb-4">
-            Our Leadership
+            {t("leadership.title")}
           </h2>
           <p className="text-xl text-center text-black-rich mb-12 max-w-3xl mx-auto">
-            Dedicated individuals guiding our community with wisdom and
-            integrity
+            {t("leadership.subtitle")}
           </p>
 
           {/* <!-- Board of Trustees --> */}
           <div className="mb-16">
             <h3 className="text-2xl font-bold text-green-islamic mb-8 text-center border-b border-gold-light pb-3">
-              Board of Trustees
+              {t("governance.trustee.title")}
             </h3>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
-              {/* <!-- Trustee 1 --> */}
-              <LeaderCard
-                name={"Alhaji Musa Abubakar"}
-                role={"Chairman"}
-                address={"123 Islamic Way, Babura, Nigeria"}
-                email={"musa@anic-babura.org"}
-                image={""}
-                trustee
-              />
-
-              {/* <!-- Trustee 2 --> */}
-              <LeaderCard
-                name={"Dr. Aisha Bello"}
-                role={"Vice-Chairman"}
-                address={"123 Islamic Way, Babura, Nigeri"}
-                email={"musa@anic-babura.org"}
-                image={""}
-                trustee
-              />
-
-              {/* <!-- Trustee 3 --> */}
-              <LeaderCard
-                name={"Sheikh Ibrahim Musa"}
-                role={"Secretary"}
-                address={"123 Islamic Way, Babura, Nigeria"}
-                email={"musa@anic-babura.org"}
-                image={""}
-                trustee
-              />
+              {trusteeMembers.map((trustee, i) => (
+                <LeaderCard
+                  key={i}
+                  name={trustee.name}
+                  role={trustee.designation}
+                  address={trustee.address}
+                  email={trustee.email}
+                  image={""}
+                  trustee
+                />
+              ))}
             </div>
           </div>
 
           {/* <!-- Management Team --> */}
           <div>
             <h3 className="text-2xl font-bold text-green-islamic mb-8 text-center border-b-2 border-gold-light pb-3">
-              Management Team
+              {t("governance.management.title")}
             </h3>
 
             <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
               {/* <!-- Manager 1 --> */}
-              <LeaderCard name={"Imam Yusuf Adamu"} role={"Head Imam"} />
-
-              {/* <!-- Manager 2 --> */}
-              <div className="leader-card transition-all duration-300 bg-white p-6 rounded-xl shadow-md text-center">
-                <div className="w-20 h-20 bg-gold-light rounded-full mx-auto mb-4 overflow-hidden border-4 border-gold">
-                  <div className="bg-gray-200 border-2 border-dashed rounded-xl w-full h-full"></div>
-                </div>
-                <h4 className="text-lg font-bold text-green-islamic">
-                  Hajiya Fatima Ahmed
-                </h4>
-                <p className="text-gold text-sm mb-2">Head Teacher</p>
-              </div>
-
-              {/* <!-- Manager 3 --> */}
-              <div className="leader-card transition-all duration-300 bg-white p-6 rounded-xl shadow-md text-center">
-                <div className="w-20 h-20 bg-gold-light rounded-full mx-auto mb-4 overflow-hidden border-4 border-gold">
-                  <div className="bg-gray-200 border-2 border-dashed rounded-xl w-full h-full"></div>
-                </div>
-                <h4 className="text-lg font-bold text-green-islamic">
-                  Alhaji Kabiru Sani
-                </h4>
-                <p className="text-gold text-sm mb-2">Accountant</p>
-              </div>
-
-              {/* <!-- Manager 4 --> */}
-              <div className="leader-card transition-all duration-300 bg-white p-6 rounded-xl shadow-md text-center">
-                <div className="w-20 h-20 bg-gold-light rounded-full mx-auto mb-4 overflow-hidden border-4 border-gold">
-                  <div className="bg-gray-200 border-2 border-dashed rounded-xl w-full h-full"></div>
-                </div>
-                <h4 className="text-lg font-bold text-green-islamic">
-                  Malama Zainab Usman
-                </h4>
-                <p className="text-gold text-sm mb-2">Women's Programs</p>
-              </div>
-
-              {/* <!-- Manager 5 --> */}
-              <div className="leader-card transition-all duration-300 bg-white p-6 rounded-xl shadow-md text-center">
-                <div className="w-20 h-20 bg-gold-light rounded-full mx-auto mb-4 overflow-hidden border-4 border-gold">
-                  <div className="bg-gray-200 border-2 border-dashed rounded-xl w-full h-full"></div>
-                </div>
-                <h4 className="text-lg font-bold text-green-islamic">
-                  Brother Ahmed Musa
-                </h4>
-                <p className="text-gold text-sm mb-2">Youth Coordinator</p>
-              </div>
-
-              {/* <!-- Manager 6 --> */}
-              <div className="leader-card transition-all duration-300 bg-white p-6 rounded-xl shadow-md text-center">
-                <div className="w-20 h-20 bg-gold-light rounded-full mx-auto mb-4 overflow-hidden border-4 border-gold">
-                  <div className="bg-gray-200 border-2 border-dashed rounded-xl w-full h-full"></div>
-                </div>
-                <h4 className="text-lg font-bold text-green-islamic">
-                  Hajiya Aisha Abdullahi
-                </h4>
-                <p className="text-gold text-sm mb-2">Community Outreach</p>
-              </div>
-
-              {/* <!-- Manager 7 --> */}
-              <div className="leader-card transition-all duration-300 bg-white p-6 rounded-xl shadow-md text-center">
-                <div className="w-20 h-20 bg-gold-light rounded-full mx-auto mb-4 overflow-hidden border-4 border-gold">
-                  <div className="bg-gray-200 border-2 border-dashed rounded-xl w-full h-full"></div>
-                </div>
-                <h4 className="text-lg font-bold text-green-islamic">
-                  Sheikh Tukur Bello
-                </h4>
-                <p className="text-gold text-sm mb-2">JIBWIS Representative</p>
-              </div>
-
-              {/* <!-- Manager 8 --> */}
-              <div className="leader-card transition-all duration-300 bg-white p-6 rounded-xl shadow-md text-center">
-                <div className="w-20 h-20 bg-gold-light rounded-full mx-auto mb-4 overflow-hidden border-4 border-gold">
-                  <div className="bg-gray-200 border-2 border-dashed rounded-xl w-full h-full"></div>
-                </div>
-                <h4 className="text-lg font-bold text-green-islamic">
-                  Alhaji Suleiman Nuhu
-                </h4>
-                <p className="text-gold text-sm mb-2">
-                  AN Family Representative
-                </p>
-              </div>
+              {managementMembers.map((member, i) => (
+                <LeaderCard
+                  key={i}
+                  name={member.name}
+                  role={member.designation}
+                />
+              ))}
             </div>
           </div>
         </div>
@@ -379,59 +292,28 @@ function About() {
       <div className="py-16 bg-gradient-to-r from-green-islamic to-green-dark text-cream">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-4">
-            Our Impact in the Community
+            {t("impact.title")}
           </h2>
           <p className="text-xl text-center mb-12 max-w-3xl mx-auto">
-            Transforming lives through faith, education, and service
+            {t("impact.subtitle")}
           </p>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <div className="text-center p-6">
-              <div className="text-5xl font-bold text-gold mb-4">500+</div>
-              <h3 className="text-xl font-bold mb-2">Students Educated</h3>
-              <p>Children receiving Islamic and secular education annually</p>
-            </div>
-
-            <div className="text-center p-6">
-              <div className="text-5xl font-bold text-gold mb-4">10,000+</div>
-              <h3 className="text-xl font-bold mb-2">Prayers Hosted</h3>
-              <p>Daily prayers and Jumu'ah congregations each year</p>
-            </div>
-
-            <div className="text-center p-6">
-              <div className="text-5xl font-bold text-gold mb-4">200+</div>
-              <h3 className="text-xl font-bold mb-2">Families Supported</h3>
-              <p>Through our charity and zakat distribution programs</p>
-            </div>
+            {societyImpact.map((item, i) => (
+              <div key={i} className="text-center p-6">
+                <div className="text-5xl font-bold text-gold mb-4">
+                  {item.value}
+                </div>
+                <h3 className="text-xl font-bold mb-2">{item.title}</h3>
+                <p>{item.desc}</p>
+              </div>
+            ))}
           </div>
         </div>
       </div>
 
       {/* <!-- Call to Action --> */}
-      <div className="py-16">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-green-islamic mb-6">
-            Become Part of Our Community
-          </h2>
-          <p className="text-xl text-black-rich mb-8 max-w-2xl mx-auto">
-            Join us in our mission to promote Islamic values and serve our
-            community
-          </p>
-          <div className="flex justify-center space-x-4">
-            <Button
-              theme=""
-              title={"Volunteer With Us"}
-              handleClick={() => {}}
-            />
-
-            <Button
-              theme="tertiary"
-              title={"Make a Donation"}
-              handleClick={() => {}}
-            />
-          </div>
-        </div>
-      </div>
+      <CTA />
 
       {/* <!-- Footer --> */}
       <Footer />

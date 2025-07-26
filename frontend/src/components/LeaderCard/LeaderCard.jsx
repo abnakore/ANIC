@@ -22,7 +22,7 @@ function LeaderCard({ name, role, address, email, image, trustee = false }) {
             <div className="flex items-start">
               <FaEnvelope className="text-gold mt-1 mr-3" />
               <a
-                href="mailto:musa@anic-babura.org"
+                href={`mailto:${email}`}
                 className="text-green-islamic hover:underline"
               >
                 {email}

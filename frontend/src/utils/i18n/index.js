@@ -4,7 +4,10 @@ import { initReactI18next } from "react-i18next";
 // Import all the translations
 import enHome from "./locales/en/home.json";
 import enCommon from "./locales/en/common.json";
+import enAbout from "./locales/en/about.json";
+
 import haHome from "./locales/ha/home.json";
+
 import arHome from "./locales/ar/home.json";
 
 // the translations
@@ -22,6 +25,7 @@ const resources = {
     // },
     home: enHome,
     common: enCommon,
+    about: enAbout,
   },
   ha: {
     // translation: {
@@ -29,12 +33,10 @@ const resources = {
     // },
     home: haHome,
     common: enCommon,
-    nav: enNav,
   },
   ar: {
     home: arHome,
     common: enCommon,
-    nav: enNav,
   },
 };
 
@@ -44,7 +46,7 @@ i18n
     resources,
     lng: "en", // if you're using a language detector, do not define the lng option
     fallbackLng: "en",
-    ns: ["home", "common", "nav"], // All namespaces ("common", "home", "about")
+    ns: ["home", "common", "about"], // All namespaces ("common", "home", "about")
     interpolation: {
       escapeValue: false, // react already safes from xss => https://www.i18next.com/translation-function/interpolation#unescape
     },

@@ -2,5 +2,180 @@
     "hero": {
         "title": "About Our Islamic Center",
         "subtitle": "Discover our journey, mission, and the dedicated individuals who make our community thrive."
+    },
+    "mission": {
+        "title": "Our Mission",
+        "statement": "To establish a vibrant Islamic community that promotes faith, knowledge, and service. We strive to be a beacon of Islamic values, providing spiritual guidance, educational resources, and community support for Muslims in Babura and beyond."
+    },
+    "vision": {
+        "title": "Our Vision",
+        "statement": "To create a sustainable Islamic ecosystem where every Muslim can grow spiritually, intellectually, and socially. We envision a future where our center serves as a model for Islamic excellence and community development throughout Nigeria."
+    },
+    "history": {
+        "title": "Our Journey",
+        "timelines": [
+            {
+                "title": "1995: Foundation",
+                "text": "The AN Islamic Center was established as a small community gathering place by the late Abubakar Nakore and his family."
+            },
+            {
+                "title": "2002: Mosque Construction",
+                "text": "With community support, we completed construction of our main mosque building, accommodating 500 worshippers."
+            },
+            {
+                "title": "2008: Islamic School",
+                "text": "We established our Islamic school, providing Quranic education and modern academics to over 200 students."
+            },
+            {
+                "title": "2015: Waqf Establishment",
+                "text": "The center was formally dedicated as a perpetual Waqf, ensuring its continuity for future generations."
+            },
+            {
+                "title": "2023: Expansion",
+                "text": "We completed our community center expansion, adding new facilities for youth programs and community events."
+            }
+        ]
+    },
+    "governance": {
+        "title": "Governance Structure",
+        "subtitle": "Our organizational structure ensures transparent and effective management according to Islamic principles.",
+        "trustee": {
+            "title": "Board of Trustees",
+            "subtitle": "Policy & Oversight",
+            "brief": "The Board of Trustees consists of at least five members of proven integrity, with at least one member from the progeny of the late Abubakar Nakore.",
+            "responsibilities": {
+                "title": "Responsibilities",
+                "items": [
+                    "Make main policy decisions for the Center",
+                    "Appoint members to the Board of Management",
+                    "Ratify quarterly audit reports",
+                    "Replace deceased, dismissed or resigned members"
+                ]
+            },
+            "quote": "Members are selected based on proven integrity and commitment to Islamic values.",
+            "members": {
+                "aan": {
+                    "name": "Engr. Abdurrazaq Abubakar Nakore",
+                    "designation": "Chairman",
+                    "address": "",
+                    "email": "arazaq.abunakore@gmail.com"
+                },
+                "aia": {
+                    "name": "Engr. Awwal Ibrahim Abubakar",
+                    "designation": "Chairman",
+                    "address": "",
+                    "email": "abubakarawwal@ymail.com"
+                },
+                "bs": {
+                    "name": "Balarabe Sabo",
+                    "designation": "Secretary",
+                    "address": "",
+                    "email": "sabob1961@yahoo.com"
+                },
+                "bsb": {
+                    "name": "Dr. Bashir Sabo Babura",
+                    "designation": "Trustee",
+                    "address": "",
+                    "email": "bbsabo@gmail.com"
+                },
+                "tu": {
+                    "name": "Alhaji Tijjani Usman Babura",
+                    "designation": "Trustee",
+                    "address": "",
+                    "email": "tijjaniusman418@gmail.com"
+                }
+            }
+        },
+        "management": {
+            "title": "Board of Management",
+            "subtitle": "Day-to-Day Operations",
+            "brief": "The Board of Management consists of at least eleven members responsible for daily operations and accountable to the Board of Trustees.",
+            "composition": {
+                "title": "Composition",
+                "items": [
+                    "Imam",
+                    "Head Teacher",
+                    "Accountant",
+                    "PTA Chairman",
+                    "AN Family Representatives",
+                    "JIBWIS Representative",
+                    "Community Members"
+                ]
+            },
+            "quote": "The Board of Management implements policies set by the Board of Trustees.",
+            "members": {
+                "hsm": {
+                    "name": "Ustaz Hassan S. Musa",
+                    "designation": "Member"
+                },
+                "ni": {
+                    "name": "Nasiru Idi",
+                    "designation": "Member"
+                },
+                "...1": {
+                    "name": "",
+                    "designation": "Head Teacher"
+                },
+                "...2": {
+                    "name": "",
+                    "designation": "Imam"
+                },
+                "...3": {
+                    "name": "",
+                    "designation": "Accountant"
+                },
+                "...4": {
+                    "name": "",
+                    "designation": "P.T.A Reps"
+                },
+                "sy": {
+                    "name": "Saminu Yusuf",
+                    "designation": "Member"
+                },
+                "bl": {
+                    "name": "Mal. Badamasi Leko",
+                    "designation": "Member"
+                },
+                "ma": {
+                    "name": "Magaji Abdullahi",
+                    "designation": "Member"
+                },
+                "ka": {
+                    "name": "Kamal Abdurrazaq",
+                    "designation": "Member"
+                },
+                "ia": {
+                    "name": "Ibrahim Awwal",
+                    "designation": "Member"
+                }
+            }
+        },
+        "relationshipNote": "The Board of Management is responsible to the Board of Trustees • No person serves on both boards simultaneously",
+        "readFull": "Read Full Constitution →"
+    },
+    "leadership": {
+        "title": "Our Leadership",
+        "subtitle": "Dedicated individuals guiding our community with wisdom and integrity."
+    },
+    "impact": {
+        "title": "Our Impact in the Community",
+        "subtitle": "Transforming lives through faith, education, and service.",
+        "items": [
+            {
+                "title": "Students Educated",
+                "value": "500+",
+                "desc": "Children receiving Islamic and secular education annually"
+            },
+            {
+                "title": "Prayers Hosted",
+                "value": "10,000+",
+                "desc": "Daily prayers and Jumu'ah congregations each year"
+            },
+            {
+                "title": "Families Supported",
+                "value": "200+",
+                "desc": "Through our charity and zakat distribution programs"
+            }
+        ]
     }
 }
