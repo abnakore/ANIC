@@ -4,8 +4,14 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { Link, useNavigate } from "react-router-dom";
 
-import { FaBullseye, FaEye, FaInfoCircle, FaTasks } from "react-icons/fa";
-import { FaUserGear, FaUsersGear, FaUserShield } from "react-icons/fa6";
+import {
+  FaBullseye,
+  FaEye,
+  FaInfoCircle,
+  FaTasks,
+  FaUser,
+} from "react-icons/fa";
+import { FaUsersGear, FaUserShield } from "react-icons/fa6";
 
 // Components
 import Footer from "../../containers/Footer/Footer";
@@ -191,7 +197,7 @@ function About() {
 
                 <div className="mb-6">
                   <h4 className="text-lg font-bold text-green-islamic mb-3 flex items-center">
-                    <i className="fas fa-users text-gold mr-2"></i>
+                    <FaUser className="text-gold mr-2" />
                     {t("governance.management.composition.title")}:
                   </h4>
                   <ul className="space-y-2 pl-6">

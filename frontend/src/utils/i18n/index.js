@@ -5,6 +5,7 @@ import { initReactI18next } from "react-i18next";
 import enHome from "./locales/en/home.json";
 import enCommon from "./locales/en/common.json";
 import enAbout from "./locales/en/about.json";
+import enContact from "./locales/en/contact.json";
 
 import haHome from "./locales/ha/home.json";
 
@@ -26,6 +27,7 @@ const resources = {
     home: enHome,
     common: enCommon,
     about: enAbout,
+    contact: enContact,
   },
   ha: {
     // translation: {
@@ -33,10 +35,14 @@ const resources = {
     // },
     home: haHome,
     common: enCommon,
+    about: enAbout,
+    contact: enContact,
   },
   ar: {
     home: arHome,
     common: enCommon,
+    about: enAbout,
+    contact: enContact,
   },
 };
 
@@ -46,7 +52,7 @@ i18n
     resources,
     lng: "en", // if you're using a language detector, do not define the lng option
     fallbackLng: "en",
-    ns: ["home", "common", "about"], // All namespaces ("common", "home", "about")
+    ns: ["common", "home", "about", "contact"], // All namespaces ("common", "home", "about")
     interpolation: {
       escapeValue: false, // react already safes from xss => https://www.i18next.com/translation-function/interpolation#unescape
     },
