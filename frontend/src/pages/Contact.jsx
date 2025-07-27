@@ -9,12 +9,61 @@ import {
   FaPhone,
   FaEnvelope,
   FaPaperPlane,
+  FaMapMarkedAlt,
+  FaBus,
+  FaCar,
+  FaWheelchair,
 } from "react-icons/fa";
 import Input from "../components/Input";
 import Button from "../components/Button/Button";
+import Footer from "../containers/Footer/Footer";
 
 function Contact() {
   const { t } = useTranslation("contact");
+
+  // Other contact info
+  const otherInfo = {
+    location: {
+      icon: <FaMapMarkerAlt className="text-xl text-green-islamic" />,
+      text: t("common:address"),
+      ctaIcon: <FaArrowRight className="inline ml-1" />,
+      ctaAction: () => {},
+    },
+    phone: {
+      icon: <FaPhoneAlt className="text-xl text-green-islamic" />,
+      text: t("common:phoneNo"),
+      ctaIcon: <FaPhone className="inline ml-1" />,
+      ctaAction: () => {},
+    },
+    email: {
+      icon: <FaEnvelope className="text-xl text-green-islamic" />,
+      text: "info@anic.org",
+      ctaIcon: <FaEnvelope className="inline ml-1" />,
+      ctaAction: () => {},
+    },
+  };
+
+  // Get the contact Cards
+  const contactCards = Object.entries(
+    t("contacts", { returnObjects: true })
+  ).map(([key, item]) => ({ ...item, ...otherInfo[key], key }));
+
+  // types of each form field
+  const fieldTypes = {
+    name: "text",
+    email: "email",
+    subject: "dropdown",
+    message: "textarea",
+  };
+
+  // Get the Form fields
+  const formFields = Object.entries(
+    t("form.fields", { returnObjects: true })
+  ).map(([key, item]) => ({ ...item, type: fieldTypes[key] }));
+
+  // Get Visiting Hours info
+  const visitingHours = t("addInfo.items", { returnObjects: true });
+
   return (
     <section className="bg-cream islamic-pattern">
       <NavBar />
@@ -26,73 +75,41 @@ function Contact() {
 
         {/* Contact Cards */}
         <div className="grid lg:grid-cols-3 gap-8 mb-16">
-          {/* Location Card */}
-          <ContactCard
-            icon={<FaMapMarkerAlt className="text-xl text-green-islamic" />}
-            title={"Our Location"}
-            text={"AN Islamic Center Babura, Nigeria"}
-            ctaTitle={"Get Directions"}
-            ctaIcon={<FaArrowRight className="inline ml-1" />}
-            ctaAction={() => {}}
-          />
-          {/* Phone Card */}
-          <ContactCard
-            icon={<FaPhoneAlt className="text-xl text-green-islamic" />}
-            title={"Call Us"}
-            text={"+234 XXX XXX XXXX"}
-            subtext={"9:00 AM - 5:00 PM"}
-            ctaTitle={"Call Now"}
-            ctaIcon={<FaPhone className="inline ml-1" />}
-            ctaAction={() => {}}
-          />
-          {/* Email Card */}
-          <ContactCard
-            icon={<FaEnvelope className="text-xl text-green-islamic" />}
-            title={"Email Us"}
-            text={"info@anic.org"}
-            subtext={"24/7 Support"}
-            ctaTitle={"Email Now"}
-            ctaIcon={<FaEnvelope className="inline ml-1" />}
-            ctaAction={() => {}}
-          />
+          {contactCards.map((item) => (
+            <ContactCard
+              key={item.key}
+              icon={item.icon}
+              title={item.title}
+              text={item.text}
+              subtext={item.subtext}
+              ctaTitle={item.ctaTitle}
+              ctaIcon={item.ctaIcon}
+              ctaAction={item.ctaAction}
+            />
+          ))}
         </div>
 
-        {/* Contact Form (from Design 1) */}
+        {/* Contact Form */}
         <div className="grid md:grid-cols-2 gap-12 items-start mb-16">
           {/* Left: Contact Form */}
           <div className="bg-white p-8 rounded-xl shadow-lg border-t-4 border-gold">
             <h2 className="text-2xl font-bold text-green-islamic mb-6">
-              <i className="fas fa-paper-plane text-gold mr-2"></i>
-              <FaPaperPlane className="inline text-gold mr-2" />
-              Send Us a Message
+              <FaPaperPlane className="inline text-gold mx-2" />
+              {t("form.title")}
             </h2>
             <form className="space-y-4">
-              <Input title={"Full Name"} placeholder="Enter Your Full Name" />
-              <Input
-                title={"Email Address"}
-                placeholder="Enter Your Email Address"
-              />
+              {formFields.map((field, i) => (
+                <Input
+                  key={i}
+                  title={field.title}
+                  placeholder={field.placeholder}
+                  type={field.type}
+                  dropdownOptions={field.dropdownOptions}
+                />
+              ))}
 
-              <Input
-                title={"Subject"}
-                placeholder="Enter Your Email Address"
-                type="dropdown"
-                dropdownOptions={[
-                  "General Inquiry",
-                  "Prayer Times",
-                  "Islamic Classes",
-                  "Donation Question",
-                  "Other",
-                ]}
-              />
-
-              <Input
-                title={"Your Message"}
-                placeholder="Write your message"
-                type="textarea"
-              />
               <Button
-                title={"Submit Message"}
+                title={t("form.send")}
                 handleClick={() => {}}
                 otherClasses={"w-full"}
               />
@@ -102,21 +119,18 @@ function Contact() {
           {/* Right: Additional Info */}
           <div className="bg-gradient-to-br from-green-islamic/5 to-green-dark/5 p-8 rounded-xl border border-gold-light">
             <h3 className="text-xl font-bold text-green-islamic mb-4">
-              Visiting Hours
+              {t("addInfo.title")}
             </h3>
             <div className="space-y-4 mb-6">
-              <div className="flex justify-between border-b border-gold-light pb-2">
-                <span>Monday - Thursday</span>
-                <span className="font-medium">8:00 AM - 8:00 PM</span>
-              </div>
-              <div className="flex justify-between border-b border-gold-light pb-2">
-                <span>Friday</span>
-                <span className="font-medium">8:00 AM - 12:00 PM</span>
-              </div>
-              <div className="flex justify-between border-b border-gold-light pb-2">
-                <span>Saturday - Sunday</span>
-                <span className="font-medium">9:00 AM - 6:00 PM</span>
-              </div>
+              {visitingHours.map((item, i) => (
+                <div
+                  key={i}
+                  className="flex justify-between border-b border-gold-light pb-2"
+                >
+                  <span>{item.title}</span>
+                  <span className="font-medium">{item.value}</span>
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -124,26 +138,26 @@ function Contact() {
         {/* Map Section */}
         <div className="bg-white p-6 rounded-xl shadow-lg">
           <h2 className="text-2xl font-bold text-green-islamic mb-6 flex items-center">
-            <i className="fas fa-map-marked-alt text-gold mr-3"></i>
-            Our Location on Map
+            <FaMapMarkedAlt className="text-gold mr-3" />
+            {t("map.title")}
           </h2>
 
           {/* Map Placeholder */}
           <div className="bg-gray-200 h-96 rounded-lg flex flex-col items-center justify-center relative overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-r from-green-islamic/20 to-green-dark/20 z-10"></div>
-            <i className="fas fa-map-marker-alt text-5xl text-gold z-20 animate-bounce"></i>
+            <FaMapMarkerAlt className="text-5xl text-gold z-20 animate-bounce" />
             <div className="z-20 mt-4 text-center px-4">
               <h3 className="text-xl font-bold text-green-islamic">
-                AN Islamic Center
+                {t("common:title")}
               </h3>
-              <p className="text-black-rich">Babura, Nigeria</p>
-              <Button title={"Open in Google Maps"} />
+              <p className="text-black-rich">{t("common:baburaNigeria")}</p>
+              <Button title={t("map.openInMap")} />
             </div>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6 mt-6">
+          {/* <div className="grid md:grid-cols-3 gap-6 mt-6">
             <div className="bg-cream p-4 rounded-lg flex items-center">
-              <i className="fas fa-bus text-2xl text-gold mr-4"></i>
+              <FaBus className="text-2xl text-gold mr-4" />
               <div>
                 <h4 className="font-bold text-green-islamic">
                   Public Transport
@@ -152,22 +166,23 @@ function Contact() {
               </div>
             </div>
             <div className="bg-cream p-4 rounded-lg flex items-center">
-              <i className="fas fa-car text-2xl text-gold mr-4"></i>
+              <FaCar className="text-2xl text-gold mr-4" />
               <div>
                 <h4 className="font-bold text-green-islamic">Parking</h4>
                 <p className="text-sm">Free parking available onsite</p>
               </div>
             </div>
             <div className="bg-cream p-4 rounded-lg flex items-center">
-              <i className="fas fa-wheelchair text-2xl text-gold mr-4"></i>
+              <FaWheelchair className="text-2xl text-gold mr-4" />
               <div>
                 <h4 className="font-bold text-green-islamic">Accessibility</h4>
                 <p className="text-sm">Wheelchair accessible facility</p>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
+      <Footer />
     </section>
   );
 }
