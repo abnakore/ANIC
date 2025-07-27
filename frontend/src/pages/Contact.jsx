@@ -169,7 +169,10 @@ function Contact() {
               <FaMapMarkedAlt className="text-gold mr-3" />
               {t("map.title")}
             </h2>
-            <Button title={t("map.openInMap")} />
+            <Button
+              title={t("map.openInMap")}
+              handleClick={openCompanyLocation}
+            />
           </div>
 
           {/* Map Placeholder */}
