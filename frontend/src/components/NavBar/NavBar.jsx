@@ -36,7 +36,8 @@ function NavBar() {
           <div className="flex items-center">
             <div className="mr-3 text-2xl text-gold">
               {/* !!! LOGO */}
-              <FaMosque />
+              <img src="/images/logo_bg.png" alt="" className="w-10" />
+              {/* <FaMosque /> */}
             </div>
             <span className="text-xl font-bold text-green-islamic">
               {t("title")}
