@@ -71,7 +71,7 @@ function Footer() {
             </p>
           </div>
 
-          <div>
+          {/* <div>
             <h3 className="text-xl font-bold mb-4">{t("footer.newsletter")}</h3>
             <p className="mb-4">{t("footer.newsletterSubtitle")}</p>
             <div className="flex">
@@ -84,7 +84,7 @@ function Footer() {
                 <FaPaperPlane />
               </button>
             </div>
-          </div>
+          </div> */}
         </div>
         {/* !!! Add language changer */}
 

@@ -31,7 +31,7 @@ function TimelineItem({ side, title, text }) {
               1995: Foundation
             </h3>
             <p className="text-black-rich">
-              The AN Islamic Center was established as a small community
+              The Abubakar Nakore Islamic Center was established as a small community
               gathering place by the late Alhaji Nuhu and his family.
             </p>
           </div>

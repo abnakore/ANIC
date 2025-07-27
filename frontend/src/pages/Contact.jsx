@@ -18,8 +18,17 @@ import Input from "../components/Input";
 import Button from "../components/Button/Button";
 import Footer from "../containers/Footer/Footer";
 
+import {
+  COMPANY_LOCATION,
+  EMAIL_ADDRESS,
+  PHONE_NUMBER,
+} from "../constants/constants";
+
 function Contact() {
   const { t } = useTranslation("contact");
+
+  // Get Company location
+  const { latitude, longitude, label } = COMPANY_LOCATION;
 
   // Other contact info
   const otherInfo = {
@@ -27,19 +36,19 @@ function Contact() {
       icon: <FaMapMarkerAlt className="text-xl text-green-islamic" />,
       text: t("common:address"),
       ctaIcon: <FaArrowRight className="inline ml-1" />,
-      ctaAction: () => {},
+      ctaAction: () => openCompanyLocation(),
     },
     phone: {
       icon: <FaPhoneAlt className="text-xl text-green-islamic" />,
       text: t("common:phoneNo"),
       ctaIcon: <FaPhone className="inline ml-1" />,
-      ctaAction: () => {},
+      ctaAction: () => (location.href = `tel:${PHONE_NUMBER}`),
     },
     email: {
       icon: <FaEnvelope className="text-xl text-green-islamic" />,
-      text: "info@anic.org",
+      text: EMAIL_ADDRESS,
       ctaIcon: <FaEnvelope className="inline ml-1" />,
-      ctaAction: () => {},
+      ctaAction: () => (location.href = `mailto:${EMAIL_ADDRESS}`),
     },
   };
 
@@ -63,6 +72,24 @@ function Contact() {
 
   // Get Visiting Hours info
   const visitingHours = t("addInfo.items", { returnObjects: true });
+
+  // Function that opens location in google map
+  const openCompanyLocation = () => {
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+    const webUrl = `https://www.google.com/maps/search/?api=1&query=${latitude},${longitude}`;
+    const appUrl = `geo:${latitude},${longitude}?q=${encodeURIComponent(
+      label
+    )}`;
+
+    if (isMobile) {
+      // Open map app on mobile
+      window.location.href = appUrl;
+    } else {
+      // Open Google Maps in new tab on desktop
+      window.open(webUrl, "_blank");
+    }
+  };
 
   return (
     <section className="bg-cream islamic-pattern">
@@ -137,21 +164,31 @@ function Contact() {
 
         {/* Map Section */}
         <div className="bg-white p-6 rounded-xl shadow-lg">
-          <h2 className="text-2xl font-bold text-green-islamic mb-6 flex items-center">
-            <FaMapMarkedAlt className="text-gold mr-3" />
-            {t("map.title")}
-          </h2>
+          <div className="flex items-center justify-between mb-6">
+            <h2 className="text-2xl font-bold text-green-islamic flex items-center">
+              <FaMapMarkedAlt className="text-gold mr-3" />
+              {t("map.title")}
+            </h2>
+            <Button title={t("map.openInMap")} />
+          </div>
 
           {/* Map Placeholder */}
           <div className="bg-gray-200 h-96 rounded-lg flex flex-col items-center justify-center relative overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-r from-green-islamic/20 to-green-dark/20 z-10"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-green-islamic/20 to-green-dark/20 z-10">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3713.682085852048!2d9.01305618647635!3d12.778082741028191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x11af2f7d2ed702ad%3A0xf48bb72586f9a314!2sBabura%20732104%2C%20Jigawa!5e1!3m2!1sen!2sng!4v1753647809994!5m2!1sen!2sng"
+                className="border-0 w-full h-full"
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
             <FaMapMarkerAlt className="text-5xl text-gold z-20 animate-bounce" />
             <div className="z-20 mt-4 text-center px-4">
-              <h3 className="text-xl font-bold text-green-islamic">
+              {/* <h3 className="text-xl font-bold text-green-islamic">
                 {t("common:title")}
-              </h3>
-              <p className="text-black-rich">{t("common:baburaNigeria")}</p>
-              <Button title={t("map.openInMap")} />
+              </h3> */}
+              {/* <p className="text-black-rich">{t("common:baburaNigeria")}</p> */}
             </div>
           </div>
 

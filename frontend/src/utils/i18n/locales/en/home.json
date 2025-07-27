@@ -56,14 +56,5 @@
     "cta": {
         "title": "Join Us in Serving the Community",
         "subtitle": "Your support helps us continue our important work"
-    },
-    "footer": {
-        "about_title": "About ANIC",
-        "about_text": "AN Islamic Center is dedicated to serving the Muslim community through education, worship, and charity.",
-        "quick_links": "Quick Links",
-        "contact": "Contact Us",
-        "address": "123 Islamic Way, Babura, Nigeria",
-        "language": "Language",
-        "copyright": "© {{year}} AN Islamic Center. All rights reserved."
     }
 }

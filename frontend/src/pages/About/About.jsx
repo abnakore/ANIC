@@ -230,12 +230,12 @@ function About() {
                 {t("governance.relationshipNote")}
               </p>
             </div>
-            <Link
+            {/* <Link
               to="/constitution"
               className="text-gold hover:underline block"
             >
               {t("governance.readFull")}
-            </Link>
+            </Link> */}
           </div>
         </div>
       </section>
