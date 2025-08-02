@@ -9,6 +9,7 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { changeLanguage, LANGUAGES } from "../../utils/i18n";
 
 function Footer() {
   const { t, i18n } = useTranslation("common");
@@ -16,7 +17,7 @@ function Footer() {
   const navLinks = [
     { page: t("navBar.home"), path: "/" },
     { page: t("navBar.about"), path: "/about" },
-    { page: t("navBar.calender"), path: "/calender" },
+    // { page: t("navBar.calender"), path: "/calender" },
     { page: t("navBar.contact"), path: "/contact" },
     { page: t("navBar.donate"), path: "/donate" },
   ];
@@ -71,22 +72,35 @@ function Footer() {
             </p>
           </div>
 
-          {/* <div>
-            <h3 className="text-xl font-bold mb-4">{t("footer.newsletter")}</h3>
-            <p className="mb-4">{t("footer.newsletterSubtitle")}</p>
-            <div className="flex">
-              <input
-                type="email"
-                placeholder={t("footer.emailPlaceholder")}
-                className="px-4 py-2 rounded-l-lg w-full text-black-rich bg-cream"
-              />
-              <button className="bg-gold text-green-islamic font-bold px-4 py-2 rounded-r-lg">
-                <FaPaperPlane />
-              </button>
+          {/* Language changer */}
+          <div className="">
+            <h3 className="text-xl font-bold mb-4">{t("language")}</h3>
+            <div className="">
+              {LANGUAGES.map((language) => (
+                <button
+                  key={language.key}
+                  className={`flex items-center space-x-2 p-2 my-2 rounded-2xl ${
+                    i18n.language === language.key
+                      ? " bg-gold text-green-islamic"
+                      : "hover:text-gold-light hover:bg-cream/5"
+                  }`}
+                  onClick={() => changeLanguage(language.key)}
+                >
+                  <span
+                    className={`w-7 h-7 rounded-full flex items-center justify-center text-xs ${
+                      i18n.language === language.key
+                        ? "bg-cream text-gold"
+                        : "bg-gold-light text-green-islamic"
+                    }`}
+                  >
+                    {language.key}
+                  </span>
+                  <span>{language.value}</span>
+                </button>
+              ))}
             </div>
-          </div> */}
+          </div>
         </div>
-        {/* !!! Add language changer */}
 
         <div className="border-t border-cream mt-8 pt-6 text-center ">
           <p>{t("copyright", { year: new Date().getFullYear() })}</p>

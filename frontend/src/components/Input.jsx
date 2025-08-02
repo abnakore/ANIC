@@ -4,6 +4,7 @@ function Input({
   value,
   title,
   placeholder,
+  required = false,
   type = "text",
   onChange,
   dropdownOptions,
@@ -22,7 +23,7 @@ function Input({
         {title}
       </label>
       {type === "dropdown" ? (
-        <select className={inputClass} id={id}>
+        <select required={required} className={inputClass} id={id}>
           {dropdownOptions?.map((option, i) => (
             <option key={i}>{option}</option>
           ))}
@@ -35,6 +36,7 @@ function Input({
           value={value}
           rows={7}
           id={id}
+          required={required}
         ></textarea>
       ) : (
         <input
@@ -44,6 +46,7 @@ function Input({
           onChange={onChange}
           value={value}
           id={id}
+          required={required}
         />
       )}
     </div>

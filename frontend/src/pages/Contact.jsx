@@ -166,7 +166,7 @@ function Contact() {
         <div className="bg-white p-6 rounded-xl shadow-lg">
           <div className="flex items-center justify-between mb-6">
             <h2 className="text-2xl font-bold text-green-islamic flex items-center">
-              <FaMapMarkedAlt className="text-gold mr-3" />
+              <FaMapMarkedAlt className="text-gold mx-3" />
               {t("map.title")}
             </h2>
             <Button

@@ -14,13 +14,13 @@ function LeaderCard({ name, role, address, email, image, trustee = false }) {
         <div className="space-y-3 text-left bg-cream rounded-xl p-4 mb-4">
           {address && (
             <div className="flex items-start">
-              <FaMapMarkerAlt className="text-gold mt-1 mr-3" />
+              <FaMapMarkerAlt className="text-gold mt-1 mx-3" />
               <p className="text-black-rich">{address}</p>
             </div>
           )}
           {email && (
             <div className="flex items-start">
-              <FaEnvelope className="text-gold mt-1 mr-3" />
+              <FaEnvelope className="text-gold mt-1 mx-3" />
               <a
                 href={`mailto:${email}`}
                 className="text-green-islamic hover:underline"

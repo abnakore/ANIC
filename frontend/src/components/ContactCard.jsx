@@ -17,9 +17,9 @@ function ContactCard({
       <h3 className="text-xl font-bold text-green-islamic mb-2">{title}</h3>
       <p className="text-black-rich text-wrap">{text}</p>
       <p className="text-sm text-gold mt-2">{subtext}</p>
-      <div className="mt-4">
+      <div className="mt-4 flex justify-center items-center">
         <button
-          className="text-gold hover:text-green-dark font-medium"
+          className="text-gold hover:text-green-dark font-medium flex items-center gap-2 justify-evenly"
           onClick={ctaAction}
         >
           {ctaTitle} {ctaIcon}

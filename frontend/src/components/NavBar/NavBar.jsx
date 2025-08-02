@@ -1,8 +1,10 @@
 import { FaBars, FaChevronDown, FaGlobe, FaMosque } from "react-icons/fa";
+import { MdClose } from "react-icons/md";
 import { Link } from "react-router-dom";
 import "./nav-bar.css";
-import { LANGUAGES } from "../../utils/i18n";
+import { changeLanguage, LANGUAGES } from "../../utils/i18n";
 import { useTranslation } from "react-i18next";
+import { useState } from "react";
 
 function NavBar() {
   const { t, i18n } = useTranslation("common");
@@ -10,7 +12,7 @@ function NavBar() {
   const navLinks = [
     { page: t("navBar.home"), path: "/" },
     { page: t("navBar.about"), path: "/about" },
-    { page: t("navBar.calender"), path: "/calender" },
+    // { page: t("navBar.calender"), path: "/calender" },
     { page: t("navBar.contact"), path: "/contact" },
     { page: t("navBar.donate"), path: "/donate" },
     // { page: t("navBar."), path: "/" },
@@ -18,14 +20,9 @@ function NavBar() {
 
   // Language switcher functionality
   // Change language
-  const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng);
 
-    /* !!! ??? */
-    document.documentElement.lang = lng;
-    document.documentElement.dir = lng === "ar" ? "rtl" : "ltr";
-    // setIsMenuOpen(false);
-  };
+  // NavBar Open
+  const [navOpen, setNavOpen] = useState(false);
 
   return (
     <>
@@ -34,8 +31,7 @@ function NavBar() {
         <div className="container mx-auto flex justify-between items-center">
           {/* <!-- Title Section --> */}
           <div className="flex items-center">
-            <div className="mr-3 text-2xl text-gold">
-              {/* !!! LOGO */}
+            <div className="mx-3 text-2xl text-gold">
               <img src="/images/logo_bg.png" alt="" className="w-10" />
               {/* <FaMosque /> */}
             </div>
@@ -65,7 +61,9 @@ function NavBar() {
                 </span>
                 <FaChevronDown className="ml-1" />
               </button>
-              <div className="language-dropdown bg-white text-black-rich rounded-md shadow-lg py-2">
+              <div
+                className={`language-dropdown bg-white text-black-rich rounded-md shadow-lg py-2 ltr:right-0 rtl:left-0`}
+              >
                 {LANGUAGES.map((lang) => (
                   <button
                     key={lang.key}
@@ -83,11 +81,62 @@ function NavBar() {
               </div>
             </div>
           </div>
-          {/* !!! Implement mobile nav */}
 
-          <button className="md:hidden text-black-rich">
-            <FaBars className="text-md" />
+          <button
+            className="md:hidden text-black-rich"
+            onClick={() => setNavOpen(!navOpen)}
+          >
+            {navOpen ? (
+              <MdClose className="text-md" />
+            ) : (
+              <FaBars className="text-md" />
+            )}
           </button>
+
+          {/* Mobile nav */}
+          <div
+            className={`mobile-nav md:hidden absolute left-0 top-20 w-full bg-white/80 backdrop-blur-sm p-6 shadow-sm flex flex-col space-y-2 ${
+              !navOpen && "hidden"
+            }`}
+          >
+            {navLinks.map((link) => (
+              <Link
+                key={link.page}
+                to={link.path}
+                className="arabic-border text-black-rich hover:text-green-islamic font-medium p-3"
+              >
+                {link.page}
+              </Link>
+            ))}
+
+            {/* <!-- Language Option --> */}
+            <div className="language-switcher border-t m-1 py-4">
+              <button className="flex items-center space-x-1">
+                <FaGlobe />
+                <span>
+                  {/* {LANGUAGES.find((lang) => lang.key === i18n.language)?.value} */}
+                  {t("language")}
+                </span>
+                <FaChevronDown className="ml-1" />
+              </button>
+              <div className="mobile-language-dropdown text-black-rich rounded-md p-2">
+                {LANGUAGES.map((lang) => (
+                  <button
+                    key={lang.key}
+                    className={`block text-left px-4 py-2  ${
+                      lang.key === i18n.language
+                        ? "text-black-rich/50"
+                        : "hover:bg-cream"
+                    }`}
+                    disabled={lang.key === i18n.language}
+                    onClick={() => changeLanguage(lang.key)}
+                  >
+                    {lang.value}
+                  </button>
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
       </nav>
     </>

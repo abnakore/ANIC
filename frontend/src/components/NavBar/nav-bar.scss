@@ -21,13 +21,17 @@
     display: none;
     position: absolute;
     top: 100%;
-    right: 0;
+    // right: 0;
     min-width: 120px;
     z-index: 1;
 }
 
 .language-switcher:hover .language-dropdown {
     display: block;
+    animation: fadeIn 0.3s ease;
+}
+
+.mobile-nav {
     animation: fadeIn 0.3s ease;
 }
 

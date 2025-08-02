@@ -8,7 +8,7 @@ function TimelineItem({ side, title, text }) {
 
         <div
           className={`md:w-1/2 ${
-            side === "right" ? "md:pl-12" : "md:pr-12 md:text-right"
+            side === "right" ? "md:px-12" : "md:px-12 md:text-right"
           }`}
         >
           <div className="bg-white p-6 rounded-xl shadow-md">

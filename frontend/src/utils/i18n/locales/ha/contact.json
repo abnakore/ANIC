@@ -1,0 +1,73 @@
+{
+    "title": "Contact Our Islamic Center",
+    "contacts": {
+        "location": {
+            "title": "Our Location",
+            "text": "",
+            "subtext": "",
+            "ctaTitle": "Get Directions"
+        },
+        "phone": {
+            "title": "Call Us",
+            "text": "",
+            "subtext": "9:00 AM - 5:00 PM",
+            "ctaTitle": "Call Now"
+        },
+        "email": {
+            "title": "Email Us",
+            "text": "info@anic.org",
+            "subtext": "24/7 Support",
+            "ctaTitle": "Email Now"
+        }
+    },
+    "form": {
+        "title": "Send Us a Message",
+        "fields": {
+            "name": {
+                "title": "Full Name",
+                "placeholder": "Enter Your Full Name"
+            },
+            "email": {
+                "title": "Email Address",
+                "placeholder": "Enter Your Email Address"
+            },
+            "subject": {
+                "title": "Subject",
+                "placeholder": "",
+                "dropdownOptions": [
+                    "General Inquiry",
+                    "Prayer Times",
+                    "Islamic Classes",
+                    "Donation Question",
+                    "Other"
+                ]
+            },
+            "message": {
+                "title": "Your Message",
+                "placeholder": "Write your message"
+            }
+        },
+        "send": "Send Message"
+    },
+    "addInfo": {
+        "title": "Visiting Hours",
+        "items": [
+            {
+                "title": "Monday - Thursday",
+                "value": "8:00 AM - 8:00 PM"
+            },
+            {
+                "title": "Friday",
+                "value": "8:00 AM - 12:00 PM"
+            },
+            {
+                "title": "Saturday - Sunday",
+                "value": "9:00 AM - 6:00 PM"
+            }
+        ]
+    },
+    "map": {
+        "title": "Our Location on Map",
+        "openInMap": "Open in Google Maps"
+    }
+}

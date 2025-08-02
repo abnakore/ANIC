@@ -44,7 +44,7 @@
             "subtitle": "Policy & Oversight",
             "brief": "The Board of Trustees consists of at least five members of proven integrity, with at least one member from the progeny of the late Abubakar Nakore.",
             "responsibilities": {
-                "title": "Responsibilities",
+                "title": "Responsibilities:",
                 "items": [
                     "Make main policy decisions for the Center",
                     "Appoint members to the Board of Management",
@@ -91,7 +91,7 @@
             "subtitle": "Day-to-Day Operations",
             "brief": "The Board of Management consists of at least eleven members responsible for daily operations and accountable to the Board of Trustees.",
             "composition": {
-                "title": "Composition",
+                "title": "Composition:",
                 "items": [
                     "Imam",
                     "Head Teacher",

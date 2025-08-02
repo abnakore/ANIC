@@ -1,16 +1,60 @@
 {
     "hero": {
-        "title": "Barka da zuwa ANIC",
-        "subtitle": "Promoting Islamic Education and Values",
-        "cta": "Learn More About Our Mission"
+        "title": "Welcome to ANIC",
+        "subtitle": "A beacon of faith and knowledge in the heart of Babura. Serving the community through worship, education, and charity."
     },
-    "features": {
+    "services": {
         "title": "Our Services",
         "items": {
-            "mosque": "Daily Prayers & Jumu'ah",
-            "school": "Islamic School",
-            "dawah": "Dawah Programs",
-            "charity": "Charity Initiatives"
+            "prayers": {
+                "title": "Daily Prayers",
+                "description": "Five daily prayers and Jumu'ah congregation"
+            },
+            "education": {
+                "title": "Islamic School",
+                "description": "Quran and Islamic studies for all ages"
+            },
+            "dawah": {
+                "title": "Dawah Programs",
+                "description": "Outreach and interfaith dialogues"
+            },
+            "community": {
+                "title": "Community Support",
+                "description": "Zakat distribution and assistance programs for those in need"
+            }
         }
+    },
+    "prayer_times": {
+        "title": "Prayer Times",
+        "items": {
+            "fajr": {
+                "title": "Fajr",
+                "time": "5:00 AM"
+            },
+            "dhuhr": {
+                "title": "Dhuhr",
+                "time": "12:55 PM"
+            },
+            "asr": {
+                "title": "Asr",
+                "time": "3:54 PM"
+            },
+            "maghrib": {
+                "title": "Maghrib",
+                "time": "6:50 PM"
+            },
+            "isha": {
+                "title": "Isha",
+                "time": "8:08 PM"
+            },
+            "jumu'ah": {
+                "title": "Jumu'ah Prayer",
+                "time": "1:30 PM"
+            }
+        }
+    },
+    "cta": {
+        "title": "Join Us in Serving the Community",
+        "subtitle": "Your support helps us continue our important work"
     }
 }

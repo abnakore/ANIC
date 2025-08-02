@@ -19,6 +19,16 @@ export const LANGUAGES = [
   { key: "ar", value: "العربية" },
   { key: "ha", value: "Hausa" },
 ];
+
+// Change Language
+export const changeLanguage = (lng) => {
+  i18n.changeLanguage(lng);
+
+  /* !!! ??? */
+  document.documentElement.lang = lng;
+  document.documentElement.dir = lng === "ar" ? "rtl" : "ltr";
+};
+
 const resources = {
   en: {
     // translation: {

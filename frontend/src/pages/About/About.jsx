@@ -24,6 +24,7 @@ import LeaderCard from "../../components/LeaderCard/LeaderCard";
 // Styles
 import "./about.css";
 import CTA from "../../containers/CTA";
+import SecondaryHero from "../../containers/SecondaryHero";
 
 function About() {
   const { t, i18n } = useTranslation("about");
@@ -66,16 +67,10 @@ function About() {
       <NavBar />
 
       {/* <!-- Hero Section for About Page --> */}
-      <div className="relative py-20 px-4 bg-gradient-to-r from-green-islamic/10 to-green-dark/10">
-        {/* <!-- Background Circles --> */}
-        <div className="absolute top-20 right-0 w-64 h-64 bg-green-islamic/10 rounded-full pulse-circle"></div>
-        <div className="absolute bottom-20 left-0 w-48 h-48 bg-gold/10 rounded-full pulse-circle"></div>
-
-        <div className="container mx-auto relative z-10 max-w-4xl text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-green-islamic mb-6">
-            {t("hero.title")}
-          </h1>
-          <p className="text-xl text-black-rich mb-8">{t("hero.subtitle")}</p>
+      <SecondaryHero
+        title={t("hero.title")}
+        subtitle={t("hero.subtitle")}
+        otherContent={
           <div className="flex justify-center space-x-4">
             <Button
               theme=""
@@ -92,8 +87,8 @@ function About() {
               }
             />
           </div>
-        </div>
-      </div>
+        }
+      />
 
       {/* <!-- Mission and Vision --> */}
       <div className="py-16 bg-gradient-to-b from-cream to-gold-light/30">
@@ -153,14 +148,14 @@ function About() {
 
                 <div className="mb-6">
                   <h4 className="text-lg font-bold text-green-islamic mb-3 flex items-center">
-                    <FaTasks className="text-gold mr-2" />
-                    {t("governance.trustee.responsibilities.title")}:
+                    <FaTasks className="text-gold mx-2" />
+                    {t("governance.trustee.responsibilities.title")}
                   </h4>
                   <ul className="space-y-2 pl-6">
                     {responsibilities.map((responsibility, key) => (
                       <li
                         key={key}
-                        className="relative before:content-['•'] before:text-gold before:absolute before:-left-4"
+                        className="relative before:content-['•'] before:text-gold before:absolute ltr:before:-left-4 rtl:before:-right-4"
                       >
                         {responsibility}
                       </li>
@@ -170,7 +165,7 @@ function About() {
 
                 <div className="bg-cream p-4 rounded-lg border-l-4 border-gold">
                   <p className="text-sm text-black-rich">
-                    <FaInfoCircle className="text-gold mr-2" />
+                    <FaInfoCircle className="text-gold mx-2" />
                     {t("governance.trustee.quote")}
                   </p>
                 </div>
@@ -197,14 +192,14 @@ function About() {
 
                 <div className="mb-6">
                   <h4 className="text-lg font-bold text-green-islamic mb-3 flex items-center">
-                    <FaUser className="text-gold mr-2" />
-                    {t("governance.management.composition.title")}:
+                    <FaUser className="text-gold mx-2" />
+                    {t("governance.management.composition.title")}
                   </h4>
                   <ul className="space-y-2 pl-6">
                     {managementComposition.map((member, key) => (
                       <li
                         key={key}
-                        className="relative before:content-['•'] before:text-gold before:absolute before:-left-4"
+                        className="relative before:content-['•'] before:text-gold before:absolute ltr:before:-left-4 rtl:before:-right-4"
                       >
                         {member}
                       </li>
@@ -214,7 +209,7 @@ function About() {
 
                 <div className="bg-cream p-4 rounded-lg border-l-4 border-gold">
                   <p className="text-sm text-black-rich">
-                    <FaInfoCircle className="text-gold mr-2" />
+                    <FaInfoCircle className="text-gold mx-2" />
                     {t("governance.management.quote")}
                   </p>
                 </div>
@@ -225,7 +220,7 @@ function About() {
           {/* <!-- Relationship Note --> */}
           <div className="mt-12 text-center">
             <div className="inline-flex items-center bg-gold-light/30 px-6 py-3 rounded-full">
-              <div className="crescent bg-gold mr-3 before:bg-green-islamic"></div>
+              <div className="crescent bg-gold mx-3 before:bg-green-islamic"></div>
               <p className="font-bold text-green-islamic">
                 {t("governance.relationshipNote")}
               </p>

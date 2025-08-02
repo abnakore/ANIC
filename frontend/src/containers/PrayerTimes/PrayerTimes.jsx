@@ -35,7 +35,7 @@ function PrayerTimes() {
 
           <div className="mt-8 text-center">
             <p className="text-green-islamic font-bold">
-              <FaStarAndCrescent className="mr-2 inline" />
+              <FaStarAndCrescent className="mx-2 inline" />
               {t("prayer_times.items.jumu'ah.title")}:{" "}
               {t("prayer_times.items.jumu'ah.time")}
             </p>
