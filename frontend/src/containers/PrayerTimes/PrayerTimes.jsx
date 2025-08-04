@@ -1,19 +1,33 @@
-import React from "react";
+import React, { useEffect } from "react";
 import PrayerCard from "../../components/PrayerCard";
 import { FaStarAndCrescent } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
+import useFetch from "../../hooks/useFetch";
+import { getPrayerTimes } from "../../scripts/data";
+
+const timingsToInclude = ["Fajr", "Dhuhr", "Asr", "Maghrib", "Isha"];
 
 function PrayerTimes() {
   const { t, i18n } = useTranslation("home");
 
+  const { data, error } = useFetch(getPrayerTimes);
+
+  useEffect(() => console.log(data, error), [data]);
+
   // Get the prayers and times
-  const prayers = Object.entries(
-    t("prayer_times.items", { returnObjects: true })
-  ) // Remove Jumu'ah prayer from the list
-    .filter(([key, _]) => key !== "jumu'ah")
+  const prayers = Object.entries(data.timings || [])
+    // Get only the required timings
+    .filter(([key, _]) => timingsToInclude.includes(key))
     .map(([_, prayer]) => ({
       ...prayer,
     }));
+  // const prayers = Object.entries(
+  //   t("prayer_times.items", { returnObjects: true })
+  // ) // Remove Jumu'ah prayer from the list
+  //   .filter(([key, _]) => key !== "jumu'ah")
+  //   .map(([_, prayer]) => ({
+  //     ...prayer,
+  //   }));
 
   return (
     <div className="py-16 bg-gradient-to-r from-green-islamic/5 to-green-dark/5">
@@ -26,9 +40,9 @@ function PrayerTimes() {
           <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
             {prayers.map((prayer) => (
               <PrayerCard
-                key={prayer.title}
-                title={prayer.title}
-                time={prayer.time}
+                key={prayer.name[i18n.language]}
+                title={prayer.name[i18n.language]}
+                time={prayer.time[i18n.language]}
               />
             ))}
           </div>
@@ -37,7 +51,7 @@ function PrayerTimes() {
             <p className="text-green-islamic font-bold">
               <FaStarAndCrescent className="mx-2 inline" />
               {t("prayer_times.items.jumu'ah.title")}:{" "}
-              {t("prayer_times.items.jumu'ah.time")}
+              {t("prayer_times.items.jumu'ah.time")} 
             </p>
           </div>
         </div>

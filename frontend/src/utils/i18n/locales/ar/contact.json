@@ -1,73 +1,73 @@
 {
-    "title": "Contact Our Islamic Center",
+    "title": "اتصل بمركزنا الإسلامي",
     "contacts": {
         "location": {
-            "title": "Our Location",
+            "title": "موقعنا",
             "text": "",
             "subtext": "",
-            "ctaTitle": "Get Directions"
+            "ctaTitle": "إرشاد الطريق"
         },
         "phone": {
-            "title": "Call Us",
+            "title": "اتصل بنا",
             "text": "",
-            "subtext": "9:00 AM - 5:00 PM",
-            "ctaTitle": "Call Now"
+            "subtext": "٩:٠٠ صباحًا - ٥:٠٠ مساءً",
+            "ctaTitle": "اتصل الآن"
         },
         "email": {
-            "title": "Email Us",
+            "title": "راسلنا",
             "text": "info@anic.org",
-            "subtext": "24/7 Support",
-            "ctaTitle": "Email Now"
+            "subtext": "دعم ٢٤/٧",
+            "ctaTitle": "أرسل رسالة"
         }
     },
     "form": {
-        "title": "Send Us a Message",
+        "title": "أرسل لنا رسالة",
         "fields": {
             "name": {
-                "title": "Full Name",
-                "placeholder": "Enter Your Full Name"
+                "title": "الاسم الكامل",
+                "placeholder": "أدخل اسمك الكامل"
             },
             "email": {
-                "title": "Email Address",
-                "placeholder": "Enter Your Email Address"
+                "title": "البريد الإلكتروني",
+                "placeholder": "أدخل بريدك الإلكتروني"
             },
             "subject": {
-                "title": "Subject",
+                "title": "الموضوع",
                 "placeholder": "",
                 "dropdownOptions": [
-                    "General Inquiry",
-                    "Prayer Times",
-                    "Islamic Classes",
-                    "Donation Question",
-                    "Other"
+                    "استفسار عام",
+                    "مواقيت الصلاة",
+                    "دروس إسلامية",
+                    "سؤال تبرع",
+                    "أخرى"
                 ]
             },
             "message": {
-                "title": "Your Message",
-                "placeholder": "Write your message"
+                "title": "رسالتك",
+                "placeholder": "اكتب رسالتك"
             }
         },
-        "send": "Send Message"
+        "send": "إرسال الرسالة"
     },
     "addInfo": {
-        "title": "Visiting Hours",
+        "title": "ساعات الزيارة",
         "items": [
             {
-                "title": "Monday - Thursday",
-                "value": "8:00 AM - 8:00 PM"
+                "title": "الاثنين - الخميس",
+                "value": "8:00 صباحًا - 8:00 مساءً"
             },
             {
-                "title": "Friday",
-                "value": "8:00 AM - 12:00 PM"
+                "title": "الجمعة",
+                "value": "8:00 صباحًا - 12:00 مساءً"
             },
             {
-                "title": "Saturday - Sunday",
-                "value": "9:00 AM - 6:00 PM"
+                "title": "السبت - الأحد",
+                "value": "9:00 صباحًا - 6:00 مساءً"
             }
         ]
     },
     "map": {
-        "title": "Our Location on Map",
-        "openInMap": "Open in Google Maps"
+        "title": "موقعنا على الخريطة",
+        "openInMap": "افتح في خرائط Google"
     }
 }

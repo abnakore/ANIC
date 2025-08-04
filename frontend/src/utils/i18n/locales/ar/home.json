@@ -1,60 +1,40 @@
 {
     "hero": {
-        "title": "Welcome to ANIC",
-        "subtitle": "A beacon of faith and knowledge in the heart of Babura. Serving the community through worship, education, and charity."
+        "title": "مرحبًا بكم في ANIC",
+        "subtitle": "منارة للإيمان والمعرفة في قلب بابورا. نخدم المجتمع بالعبادة والتعليم والخير."
     },
     "services": {
-        "title": "Our Services",
+        "title": "خدماتنا",
         "items": {
             "prayers": {
-                "title": "Daily Prayers",
-                "description": "Five daily prayers and Jumu'ah congregation"
+                "title": "الصلوات اليومية",
+                "description": "خمس صلوات يومية بالإضافة إلى صلاة الجمعة"
             },
             "education": {
-                "title": "Islamic School",
-                "description": "Quran and Islamic studies for all ages"
+                "title": "المدرسة الإسلامية",
+                "description": "تعليم القرآن والدراسات الإسلامية لجميع الأعمار"
             },
             "dawah": {
-                "title": "Dawah Programs",
-                "description": "Outreach and interfaith dialogues"
+                "title": "برامج الدعوة",
+                "description": "التواصل والحوار بين الأديان"
             },
             "community": {
-                "title": "Community Support",
-                "description": "Zakat distribution and assistance programs for those in need"
+                "title": "دعم المجتمع",
+                "description": "توزيع الزكاة وبرامج المساعدة للمحتاجين"
             }
         }
     },
     "prayer_times": {
-        "title": "Prayer Times",
+        "title": "مواعيد الصلاة",
         "items": {
-            "fajr": {
-                "title": "Fajr",
-                "time": "5:00 AM"
-            },
-            "dhuhr": {
-                "title": "Dhuhr",
-                "time": "12:55 PM"
-            },
-            "asr": {
-                "title": "Asr",
-                "time": "3:54 PM"
-            },
-            "maghrib": {
-                "title": "Maghrib",
-                "time": "6:50 PM"
-            },
-            "isha": {
-                "title": "Isha",
-                "time": "8:08 PM"
-            },
             "jumu'ah": {
-                "title": "Jumu'ah Prayer",
-                "time": "1:30 PM"
+                "title": "صلاة الجمعة",
+                "time": "١:٣٠ مساءً"
             }
         }
     },
     "cta": {
-        "title": "Join Us in Serving the Community",
-        "subtitle": "Your support helps us continue our important work"
+        "title": "انضم إلينا في خدمة المجتمع",
+        "subtitle": "دعمكم يساعدنا على مواصلة رسالتنا المهمة"
     }
 }

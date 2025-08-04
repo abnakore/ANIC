@@ -1,31 +1,31 @@
 {
-    "title": "Abubakar Nakore Islamic Center",
+    "title": "Cibiyar Musulunci Abubakar Nakore",
     "navBar": {
-        "home": "Home",
-        "about": "About",
-        "contact": "Contact",
-        "calender": "Calender",
-        "services": "Services",
-        "donate": "Donate"
+        "home": "Gida",
+        "about": "Game da Mu",
+        "contact": "Tuntuɓi Mu",
+        "calender": "Kalanda",
+        "services": "Ayyuka",
+        "donate": "Yi Taimako"
     },
     "footer": {
-        "subtitle": "Promoting Islamic education and values in Babura community.",
-        "quickLinks": "Quick Links",
-        "contactUs": "Contact Us",
-        "newsletter": "Newsletter",
-        "newsletterSubtitle": "Subscribe to our newsletter for updates",
-        "emailPlaceholder": "Your email"
+        "subtitle": "Muna inganta ilimin Musulunci da darajojin addini a al’ummar Babura.",
+        "quickLinks": "Mahada Masu Sauƙi",
+        "contactUs": "Tuntuɓi Mu",
+        "newsletter": "Jaridar Imel",
+        "newsletterSubtitle": "Yi rajista don sabbin labarai",
+        "emailPlaceholder": "Imel ɗinka"
     },
-    "language": "Language",
-    "address": "Nakore House, Kofar Gabas, Babura, Babura LGA, Jigawa State.",
-    "baburaNigeria": "Babura, Nigeria",
-    "phoneNo": "+234 803 255 8543",
-    "learn_more": "Learn More",
-    "visitUs": "Visit Us",
-    "donate": "Donate Now",
-    "volunteer": "Volunteer",
-    "contactUs": "Contact Us",
-    "ourHistory": "Our History",
-    "ourLeadership": "Our Leadership",
-    "copyright": "© {{year}} Abubakar Nakore Islamic Center. All rights reserved."
+    "language": "Harshe",
+    "address": "Nakore House, Kofar Gabas, Babura, Babura LGA, Jihar Jigawa.",
+    "baburaNigeria": "Babura, Najeriya",
+    "phoneNo": "+234 803 255 8543",
+    "learn_more": "Samu Ƙarin Bayani",
+    "visitUs": "Ziyarce Mu",
+    "donate": "Yi Taimako Yanzu",
+    "volunteer": "Zama Mai Taimako",
+    "contactUs": "Tuntuɓi Mu",
+    "ourHistory": "Tarihinmu",
+    "ourLeadership": "Jagorancinmu",
+    "copyright": "© {{year}} Cibiyar Musulunci Abubakar Nakore. Haƙƙoƙin Mallaka Na Ƙasa."
 }

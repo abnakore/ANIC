@@ -1,180 +1,180 @@
 {
     "hero": {
-        "title": "About Our Islamic Center",
-        "subtitle": "Discover our journey, mission, and the dedicated individuals who make our community thrive."
+        "title": "عن مركزنا الإسلامي",
+        "subtitle": "تعرف على مسيرتنا ورسالتنا والأفراد المخلصين الذين ينهضون بمجتمعنا."
     },
     "mission": {
-        "title": "Our Mission",
-        "statement": "To establish a vibrant Islamic community that promotes faith, knowledge, and service. We strive to be a beacon of Islamic values, providing spiritual guidance, educational resources, and community support for Muslims in Babura and beyond."
+        "title": "رسالتنا",
+        "statement": "نهدف إلى بناء مجتمع إسلامي حي يعزز الإيمان والمعرفة والخدمة. نسعى لأن نكون منارة للقيم الإسلامية، ونقدم التوجيه الروحي والموارد التعليمية والدعم المجتمعي للمسلمين في بابورا وما بعدها."
     },
     "vision": {
-        "title": "Our Vision",
-        "statement": "To create a sustainable Islamic ecosystem where every Muslim can grow spiritually, intellectually, and socially. We envision a future where our center serves as a model for Islamic excellence and community development throughout Nigeria."
+        "title": "رؤيتنا",
+        "statement": "نتطلع إلى بناء منظومة إسلامية مستدامة يمكن من خلالها للمسلمين النمو روحياً وفكرياً واجتماعياً. ونرسم مستقبلاً يكون فيه مركزنا نموذجاً للتميز الإسلامي والتنمية المجتمعية في نيجيريا."
     },
     "history": {
-        "title": "Our Journey",
+        "title": "مسيرتنا",
         "timelines": [
             {
-                "title": "1995: Foundation",
-                "text": "The Abubakar Nakore Islamic Center was established as a small community gathering place by the late Abubakar Nakore and his family."
+                "title": "1995: التأسيس",
+                "text": "تأسس مركز أبو بكر ناكوري الإسلامي كمكان للتجمع المجتمعي على يد المرحوم أبو بكر ناكوري وأسرته."
             },
             {
-                "title": "2002: Mosque Construction",
-                "text": "With community support, we completed construction of our main mosque building, accommodating 500 worshippers."
+                "title": "2002: بناء المسجد",
+                "text": "بفضل دعم المجتمع، تم بناء المسجد الرئيسي الذي يتسع لـ ٥٠٠ مصلي."
             },
             {
-                "title": "2008: Islamic School",
-                "text": "We established our Islamic school, providing Quranic education and modern academics to over 200 students."
+                "title": "2008: المدرسة الإسلامية",
+                "text": "تم تأسيس المدرسة الإسلامية لتعليم القرآن والعلوم الحديثة لأكثر من ٢٠٠ طالب."
             },
             {
-                "title": "2015: Waqf Establishment",
-                "text": "The center was formally dedicated as a perpetual Waqf, ensuring its continuity for future generations."
+                "title": "2015: إنشاء الوقف",
+                "text": "تم تخصيص المركز رسمياً كوقف دائم لضمان استمراريته للأجيال القادمة."
             },
             {
-                "title": "2023: Expansion",
-                "text": "We completed our community center expansion, adding new facilities for youth programs and community events."
+                "title": "2023: التوسعة",
+                "text": "أكملنا توسعة المركز بإضافة مرافق جديدة لبرامج الشباب والفعاليات المجتمعية."
             }
         ]
     },
     "governance": {
-        "title": "Governance Structure",
-        "subtitle": "Our organizational structure ensures transparent and effective management according to Islamic principles.",
+        "title": "هيكل الإدارة",
+        "subtitle": "يوفر هيكلنا التنظيمي إدارة شفافة وفعالة وفقاً للمبادئ الإسلامية.",
         "trustee": {
-            "title": "Board of Trustees",
-            "subtitle": "Policy & Oversight",
-            "brief": "The Board of Trustees consists of at least five members of proven integrity, with at least one member from the progeny of the late Abubakar Nakore.",
+            "title": "مجلس الأمناء",
+            "subtitle": "السياقات والإشراف",
+            "brief": "يتكون مجلس الأمناء من خمسة أعضاء على الأقل ذوي نزاهة مثبتة، ويشترط وجود أحدهم من ذريّة المرحوم أبو بكر ناكوري.",
             "responsibilities": {
-                "title": "Responsibilities",
+                "title": "المسؤوليات",
                 "items": [
-                    "Make main policy decisions for the Center",
-                    "Appoint members to the Board of Management",
-                    "Ratify quarterly audit reports",
-                    "Replace deceased, dismissed or resigned members"
+                    "وضع السياسات الرئيسية للمركز",
+                    "تعيين أعضاء مجلس الإدارة",
+                    "اعتماد تقارير التدقيق كل ثلاثة أشهر",
+                    "استبدال الأعضاء المتوفين أو المستقيلين"
                 ]
             },
-            "quote": "Members are selected based on proven integrity and commitment to Islamic values.",
+            "quote": "يتم اختيار الأعضاء بناءً على نزاهتهم واقتدائهم بالقيم الإسلامية.",
             "members": {
                 "aan": {
-                    "name": "Engr. Abdurrazaq Abubakar Nakore",
-                    "designation": "Chairman",
+                    "name": "المهندس عبدالرزاق أبو بكر ناكوري",
+                    "designation": "الرئيس",
                     "address": "",
                     "email": "arazaq.abunakore@gmail.com"
                 },
                 "aia": {
-                    "name": "Engr. Awwal Ibrahim Abubakar",
-                    "designation": "Chairman",
+                    "name": "المهندس أول إبراهيم أبو بكر",
+                    "designation": "الرئيس",
                     "address": "",
                     "email": "abubakarawwal@ymail.com"
                 },
                 "bs": {
-                    "name": "Balarabe Sabo",
-                    "designation": "Secretary",
+                    "name": "بلال سابو",
+                    "designation": "السكرتير",
                     "address": "",
                     "email": "sabob1961@yahoo.com"
                 },
                 "bsb": {
-                    "name": "Dr. Bashir Sabo Babura",
-                    "designation": "Trustee",
+                    "name": "الدكتور بشير سابو بابورا",
+                    "designation": "أمين",
                     "address": "",
                     "email": "bbsabo@gmail.com"
                 },
                 "tu": {
-                    "name": "Alhaji Tijjani Usman Babura",
-                    "designation": "Trustee",
+                    "name": "الحاج تيجاني عثمان بابورا",
+                    "designation": "أمين",
                     "address": "",
                     "email": "tijjaniusman418@gmail.com"
                 }
             }
         },
         "management": {
-            "title": "Board of Management",
-            "subtitle": "Day-to-Day Operations",
-            "brief": "The Board of Management consists of at least eleven members responsible for daily operations and accountable to the Board of Trustees.",
+            "title": "مجلس الإدارة",
+            "subtitle": "الإدارة اليومية",
+            "brief": "يتألف من أحد عشر عضواً على الأقل مسؤولين عن العمليات اليومية وتحت إشراف مجلس الأمناء.",
             "composition": {
-                "title": "Composition",
+                "title": "التكوين",
                 "items": [
-                    "Imam",
-                    "Head Teacher",
-                    "Accountant",
-                    "PTA Chairman",
-                    "Abubakar Nakore Family Representatives",
-                    "JIBWIS Representative",
-                    "Community Members"
+                    "الإمام",
+                    "مدير المدرسة",
+                    "المحاسب",
+                    "رئيس لجنة أولياء الأمور",
+                    "ممثلون من عائلة أبو بكر ناكوري",
+                    "ممثل جماعة جِبْوِس",
+                    "أعضاء من المجتمع"
                 ]
             },
-            "quote": "The Board of Management implements policies set by the Board of Trustees.",
+            "quote": "يقوم مجلس الإدارة بتنفيذ السياسات التي يحددها مجلس الأمناء.",
             "members": {
                 "hsm": {
-                    "name": "Ustaz Hassan S. Musa",
-                    "designation": "Member"
+                    "name": "الأستاذ حسن س. موسى",
+                    "designation": "عضو"
                 },
                 "ni": {
-                    "name": "Nasiru Idi",
-                    "designation": "Member"
+                    "name": "ناصر إدريس",
+                    "designation": "عضو"
                 },
                 "...1": {
                     "name": "",
-                    "designation": "Head Teacher"
+                    "designation": "مدير المدرسة"
                 },
                 "...2": {
                     "name": "",
-                    "designation": "Imam"
+                    "designation": "الإمام"
                 },
                 "...3": {
                     "name": "",
-                    "designation": "Accountant"
+                    "designation": "المحاسب"
                 },
                 "...4": {
                     "name": "",
-                    "designation": "P.T.A Reps"
+                    "designation": "ممثل أولياء الأمور"
                 },
                 "sy": {
-                    "name": "Saminu Yusuf",
-                    "designation": "Member"
+                    "name": "سمينو يوسف",
+                    "designation": "عضو"
                 },
                 "bl": {
-                    "name": "Mal. Badamasi Leko",
-                    "designation": "Member"
+                    "name": "الشيخ بدماسي ليكو",
+                    "designation": "عضو"
                 },
                 "ma": {
-                    "name": "Magaji Abdullahi",
-                    "designation": "Member"
+                    "name": "مغاجي عبد الله",
+                    "designation": "عضو"
                 },
                 "ka": {
-                    "name": "Kamal Abdurrazaq",
-                    "designation": "Member"
+                    "name": "كمال عبدالرزاق",
+                    "designation": "عضو"
                 },
                 "ia": {
-                    "name": "Ibrahim Awwal",
-                    "designation": "Member"
+                    "name": "إبراهيم أول",
+                    "designation": "عضو"
                 }
             }
         },
-        "relationshipNote": "The Board of Management is responsible to the Board of Trustees • No person serves on both boards simultaneously",
-        "readFull": "Read Full Constitution →"
+        "relationshipNote": "مجلس الإدارة مسؤول أمام مجلس الأمناء • لا يجوز الجمع بين العضوية في المجلسين",
+        "readFull": "اطّلع على الدستور كاملاً →"
     },
     "leadership": {
-        "title": "Our Leadership",
-        "subtitle": "Dedicated individuals guiding our community with wisdom and integrity."
+        "title": "قيادتنا",
+        "subtitle": "أفراد مخلصون يقودون مجتمعنا بالحكمة والنزاهة."
     },
     "impact": {
-        "title": "Our Impact in the Community",
-        "subtitle": "Transforming lives through faith, education, and service.",
+        "title": "أثرنا في المجتمع",
+        "subtitle": "نغيّر الحياة من خلال الإيمان والتعليم والخدمة.",
         "items": [
             {
-                "title": "Students Educated",
-                "value": "500+",
-                "desc": "Children receiving Islamic and secular education annually"
+                "title": "عدد الطلبة المتعلمين",
+                "value": "٥٠٠+",
+                "desc": "أطفال يتلقون التعليم الإسلامي والعام سنوياً"
             },
             {
-                "title": "Prayers Hosted",
-                "value": "10,000+",
-                "desc": "Daily prayers and Jumu'ah congregations each year"
+                "title": "عدد الصلوات المستضافة",
+                "value": "١٠,٠٠٠+",
+                "desc": "الصلوات اليومية وصلاة الجمعة سنوياً"
             },
             {
-                "title": "Families Supported",
-                "value": "200+",
-                "desc": "Through our charity and zakat distribution programs"
+                "title": "الأسر المدعومة",
+                "value": "٢٠٠+",
+                "desc": "من خلال برامج الزكاة والمساعدات الخيرية"
             }
         ]
     }

@@ -8,8 +8,14 @@ import enAbout from "./locales/en/about.json";
 import enContact from "./locales/en/contact.json";
 
 import haHome from "./locales/ha/home.json";
+import haCommon from "./locales/ha/common.json";
+import haAbout from "./locales/ha/about.json";
+import haContact from "./locales/ha/contact.json";
 
 import arHome from "./locales/ar/home.json";
+import arCommon from "./locales/ar/common.json";
+import arAbout from "./locales/ar/about.json";
+import arContact from "./locales/ar/contact.json";
 
 // the translations
 // (tip move them in a JSON file and import them,
@@ -44,15 +50,15 @@ const resources = {
     //   welcomeMessage: "Barka da zuwa",
     // },
     home: haHome,
-    common: enCommon,
-    about: enAbout,
-    contact: enContact,
+    common: haCommon,
+    about: haAbout,
+    contact: haContact,
   },
   ar: {
     home: arHome,
-    common: enCommon,
-    about: enAbout,
-    contact: enContact,
+    common: arCommon,
+    about: arAbout,
+    contact: arContact,
   },
 };
 

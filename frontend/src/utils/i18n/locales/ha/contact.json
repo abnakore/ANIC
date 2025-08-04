@@ -1,73 +1,73 @@
 {
-    "title": "Contact Our Islamic Center",
+    "title": "Tuntuɓi Cibiyar Musulunci",
     "contacts": {
         "location": {
-            "title": "Our Location",
+            "title": "Matsayinmu",
             "text": "",
             "subtext": "",
-            "ctaTitle": "Get Directions"
+            "ctaTitle": "Duba Hanyar Zuwa"
         },
         "phone": {
-            "title": "Call Us",
+            "title": "Kira Mu",
             "text": "",
-            "subtext": "9:00 AM - 5:00 PM",
-            "ctaTitle": "Call Now"
+            "subtext": "9:00 na safe – 5:00 na yamma",
+            "ctaTitle": "Kira Yanzu"
         },
         "email": {
-            "title": "Email Us",
+            "title": "Aiko Mana da Imel",
             "text": "info@anic.org",
-            "subtext": "24/7 Support",
-            "ctaTitle": "Email Now"
+            "subtext": "Taimako 24/7",
+            "ctaTitle": "Aiko Imel"
         }
     },
     "form": {
-        "title": "Send Us a Message",
+        "title": "Aiko Mana da Saƙo",
         "fields": {
             "name": {
-                "title": "Full Name",
-                "placeholder": "Enter Your Full Name"
+                "title": "Cikakken Suna",
+                "placeholder": "Shigar da sunanka"
             },
             "email": {
-                "title": "Email Address",
-                "placeholder": "Enter Your Email Address"
+                "title": "Imel",
+                "placeholder": "Shigar da adress ɗin imel"
             },
             "subject": {
-                "title": "Subject",
+                "title": "Jigo",
                 "placeholder": "",
                 "dropdownOptions": [
-                    "General Inquiry",
-                    "Prayer Times",
-                    "Islamic Classes",
-                    "Donation Question",
-                    "Other"
+                    "Tambaya Gabaɗaya",
+                    "Lokutan Sallah",
+                    "Darussa na Addini",
+                    "Tambaya game da Bayarwa",
+                    "Sauran"
                 ]
             },
             "message": {
-                "title": "Your Message",
-                "placeholder": "Write your message"
+                "title": "Saƙonka",
+                "placeholder": "Rubuta saƙonka"
             }
         },
-        "send": "Send Message"
+        "send": "Aiko Saƙo"
     },
     "addInfo": {
-        "title": "Visiting Hours",
+        "title": "Lokutan Ziyara",
         "items": [
             {
-                "title": "Monday - Thursday",
-                "value": "8:00 AM - 8:00 PM"
+                "title": "Litinin – Alhamis",
+                "value": "8:00 na safe – 8:00 na dare"
             },
             {
-                "title": "Friday",
-                "value": "8:00 AM - 12:00 PM"
+                "title": "Jumma’a",
+                "value": "8:00 na safe – 12:00 na rana"
             },
             {
-                "title": "Saturday - Sunday",
-                "value": "9:00 AM - 6:00 PM"
+                "title": "Asabar – Lahadi",
+                "value": "9:00 na safe – 6:00 na yamma"
             }
         ]
     },
     "map": {
-        "title": "Our Location on Map",
-        "openInMap": "Open in Google Maps"
+        "title": "Matsayinmu a Taswira",
+        "openInMap": "Buɗe a Google Maps"
     }
 }

@@ -27,26 +27,6 @@
     "prayer_times": {
         "title": "Prayer Times",
         "items": {
-            "fajr": {
-                "title": "Fajr",
-                "time": "5:00 AM"
-            },
-            "dhuhr": {
-                "title": "Dhuhr",
-                "time": "12:55 PM"
-            },
-            "asr": {
-                "title": "Asr",
-                "time": "3:54 PM"
-            },
-            "maghrib": {
-                "title": "Maghrib",
-                "time": "6:50 PM"
-            },
-            "isha": {
-                "title": "Isha",
-                "time": "8:08 PM"
-            },
             "jumu'ah": {
                 "title": "Jumu'ah Prayer",
                 "time": "1:30 PM"

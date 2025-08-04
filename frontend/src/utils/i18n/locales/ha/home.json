@@ -1,60 +1,40 @@
 {
     "hero": {
-        "title": "Welcome to ANIC",
-        "subtitle": "A beacon of faith and knowledge in the heart of Babura. Serving the community through worship, education, and charity."
+        "title": "Maraba da Cibiyar ANIC",
+        "subtitle": "Mabudin ilimi da imani a Babura. Muna hidima ta ibada, karatu da taimako."
     },
     "services": {
-        "title": "Our Services",
+        "title": "Ayyukanmu",
         "items": {
             "prayers": {
-                "title": "Daily Prayers",
-                "description": "Five daily prayers and Jumu'ah congregation"
+                "title": "Sallolin Rana-Rana",
+                "description": "Sallah biyar da Juma’a a taro"
             },
             "education": {
-                "title": "Islamic School",
-                "description": "Quran and Islamic studies for all ages"
+                "title": "Makarantar Musulunci",
+                "description": "Koyar da Al‑Qur’an da ilimin zamani ga kowane zamani"
             },
             "dawah": {
-                "title": "Dawah Programs",
-                "description": "Outreach and interfaith dialogues"
+                "title": "Shirin Da’aawa",
+                "description": "Tattaunawa tsakanin addinai da wayar da kai"
             },
             "community": {
-                "title": "Community Support",
-                "description": "Zakat distribution and assistance programs for those in need"
+                "title": "Tallafi ga Al’umma",
+                "description": "Rarraba zakka da taimakon masu bukata"
             }
         }
     },
     "prayer_times": {
-        "title": "Prayer Times",
+        "title": "Lokutan Sallah",
         "items": {
-            "fajr": {
-                "title": "Fajr",
-                "time": "5:00 AM"
-            },
-            "dhuhr": {
-                "title": "Dhuhr",
-                "time": "12:55 PM"
-            },
-            "asr": {
-                "title": "Asr",
-                "time": "3:54 PM"
-            },
-            "maghrib": {
-                "title": "Maghrib",
-                "time": "6:50 PM"
-            },
-            "isha": {
-                "title": "Isha",
-                "time": "8:08 PM"
-            },
             "jumu'ah": {
-                "title": "Jumu'ah Prayer",
-                "time": "1:30 PM"
+                "title": "Sallar Juma’a",
+                "time": "1:30 na rana"
             }
         }
     },
     "cta": {
-        "title": "Join Us in Serving the Community",
-        "subtitle": "Your support helps us continue our important work"
+        "title": "Ka Aiko Da Tallafi Don Al’ummar Mu",
+        "subtitle": "Taimakon ka yana taimakawa wajen ci gaba da aikinmu"
     }
 }

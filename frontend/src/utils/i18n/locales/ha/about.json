@@ -1,120 +1,120 @@
 {
     "hero": {
-        "title": "About Our Islamic Center",
-        "subtitle": "Discover our journey, mission, and the dedicated individuals who make our community thrive."
+        "title": "Game da Cibiyar Musulunci",
+        "subtitle": "Gano tarihinmu, manufa, da mutane masu sadaukarwa da ke haɓaka al’ummarmu."
     },
     "mission": {
-        "title": "Our Mission",
-        "statement": "To establish a vibrant Islamic community that promotes faith, knowledge, and service. We strive to be a beacon of Islamic values, providing spiritual guidance, educational resources, and community support for Muslims in Babura and beyond."
+        "title": "Manufarmu",
+        "statement": "Gina al’umma Musulmi mai ƙarfafa imani, ilimi, da gudummawa. Muna neman zama wani haske na darajojin Musulunci, muna ba da jagorar ruhaniya, kayan karatu da tallafi ga Musulmai a Babura da kewaye."
     },
     "vision": {
-        "title": "Our Vision",
-        "statement": "To create a sustainable Islamic ecosystem where every Muslim can grow spiritually, intellectually, and socially. We envision a future where our center serves as a model for Islamic excellence and community development throughout Nigeria."
+        "title": " hangen nesanmu",
+        "statement": "Kirkiro tsarin Musulunci mai dorewa inda kowanne Musulmi zai bunkasa ruhaniya, ilimi da zamantakewa. Muna ganin cibiyar mu a matsayin shiriya na cigaba da inganci a Najeriya."
     },
     "history": {
-        "title": "Our Journey",
+        "title": "Tarihinmu",
         "timelines": [
             {
-                "title": "1995: Foundation",
-                "text": "The Abubakar Nakore Islamic Center was established as a small community gathering place by the late Abubakar Nakore and his family."
+                "title": "1995: Farawa",
+                "text": "Cibiyar Abu bkar Nakore an kafa ta a matsayin wurin haduwar al’umma kananan ta hannun marigayi Abu bkar Nakore da iyalinsa."
             },
             {
-                "title": "2002: Mosque Construction",
-                "text": "With community support, we completed construction of our main mosque building, accommodating 500 worshippers."
+                "title": "2002: Ginin Masallaci",
+                "text": "Da taimakon al’umma, an kammala ginin babban masallaci wanda zai iya karbar masu sallah 500."
             },
             {
-                "title": "2008: Islamic School",
-                "text": "We established our Islamic school, providing Quranic education and modern academics to over 200 students."
+                "title": "2008: Makarantar Musulunci",
+                "text": "An kafa makarantar Musulunci tana koyar da Qur’ani da ilimin zamani ga sama da ɗalibai 200."
             },
             {
-                "title": "2015: Waqf Establishment",
-                "text": "The center was formally dedicated as a perpetual Waqf, ensuring its continuity for future generations."
+                "title": "2015: Kafa Waqf",
+                "text": "Cibiyar an dage ta a matsayin waqf na dindindin domin tabbatar da dorewarta ga al’umma."
             },
             {
-                "title": "2023: Expansion",
-                "text": "We completed our community center expansion, adding new facilities for youth programs and community events."
+                "title": "2023: Faɗaɗa ayyuka",
+                "text": "Mun kammala fadada cibiyar tare da ƙara sabbin wurare don shirye‑shirye na matasa da tarurruka."
             }
         ]
     },
     "governance": {
-        "title": "Governance Structure",
-        "subtitle": "Our organizational structure ensures transparent and effective management according to Islamic principles.",
+        "title": "Tsarin Gudanarwa",
+        "subtitle": "Tsarinmu na ƙungiya yana tabbatar da shugabanci mai gaskiya da inganci bisa ƙa’idodin addini.",
         "trustee": {
-            "title": "Board of Trustees",
-            "subtitle": "Policy & Oversight",
-            "brief": "The Board of Trustees consists of at least five members of proven integrity, with at least one member from the progeny of the late Abubakar Nakore.",
+            "title": "Majalisar Amintattu",
+            "subtitle": "Dabaru da Kulawa",
+            "brief": "Majalisar ta ƙunshi akalla mutane biyar masu aminci, ɗaya daga cikin ’ya’ya marigayin Abu bkar Nakore.",
             "responsibilities": {
-                "title": "Responsibilities",
+                "title": "Ayyuka:",
                 "items": [
-                    "Make main policy decisions for the Center",
-                    "Appoint members to the Board of Management",
-                    "Ratify quarterly audit reports",
-                    "Replace deceased, dismissed or resigned members"
+                    "Yanke manyan manufofi na Cibiyar",
+                    "Nada mambobi ga Majalisar Gudanarwa",
+                    "Amincewa da rahotannin bincike kowane kwata",
+                    "Sauya membobin da suka rasu ko suka ajiye mukamansu"
                 ]
             },
-            "quote": "Members are selected based on proven integrity and commitment to Islamic values.",
+            "quote": "Ana zaɓen mambobi ne bisa nagartar su da sadaukarwa ga darajojin Musulunci.",
             "members": {
                 "aan": {
-                    "name": "Engr. Abdurrazaq Abubakar Nakore",
-                    "designation": "Chairman",
+                    "name": "Eng. Abdurrazaq Abubakar Nakore",
+                    "designation": "Shugaba",
                     "address": "",
                     "email": "arazaq.abunakore@gmail.com"
                 },
                 "aia": {
-                    "name": "Engr. Awwal Ibrahim Abubakar",
-                    "designation": "Chairman",
+                    "name": "Eng. Awwal Ibrahim Abubakar",
+                    "designation": "Shugaba",
                     "address": "",
                     "email": "abubakarawwal@ymail.com"
                 },
                 "bs": {
                     "name": "Balarabe Sabo",
-                    "designation": "Secretary",
+                    "designation": "Sakataren",
                     "address": "",
                     "email": "sabob1961@yahoo.com"
                 },
                 "bsb": {
                     "name": "Dr. Bashir Sabo Babura",
-                    "designation": "Trustee",
+                    "designation": "Amintacce",
                     "address": "",
                     "email": "bbsabo@gmail.com"
                 },
                 "tu": {
                     "name": "Alhaji Tijjani Usman Babura",
-                    "designation": "Trustee",
+                    "designation": "Amintacce",
                     "address": "",
                     "email": "tijjaniusman418@gmail.com"
                 }
             }
         },
         "management": {
-            "title": "Board of Management",
-            "subtitle": "Day-to-Day Operations",
-            "brief": "The Board of Management consists of at least eleven members responsible for daily operations and accountable to the Board of Trustees.",
+            "title": "Majalisar Gudanarwa",
+            "subtitle": "Gudanar da ayyukan yau da kullum",
+            "brief": "Majalisar tana da mambobi fiye da goma sha ɗaya masu kula da ayyukan yau da kullum tare da kula da Majalisar Amintattu.",
             "composition": {
-                "title": "Composition",
+                "title": "Tsarin mambobi:",
                 "items": [
                     "Imam",
-                    "Head Teacher",
-                    "Accountant",
-                    "PTA Chairman",
-                    "Abubakar Nakore Family Representatives",
-                    "JIBWIS Representative",
-                    "Community Members"
+                    "Shugaban Makaranta",
+                    "Mai Ƙididdiga",
+                    "Shugaban PTA",
+                    "Wakilan Iyali na Abu bkar Nakore",
+                    "Wakilin JIBWIS",
+                    "Mambobin Al’umma"
                 ]
             },
-            "quote": "The Board of Management implements policies set by the Board of Trustees.",
+            "quote": "Majalisar Gudanarwa tana aiwatar da ƙa’idojin da Majalisar Amintattu ta kafa.",
             "members": {
                 "hsm": {
                     "name": "Ustaz Hassan S. Musa",
-                    "designation": "Member"
+                    "designation": "Mamba"
                 },
                 "ni": {
                     "name": "Nasiru Idi",
-                    "designation": "Member"
+                    "designation": "Mamba"
                 },
                 "...1": {
                     "name": "",
-                    "designation": "Head Teacher"
+                    "designation": "Shugaban Makaranta"
                 },
                 "...2": {
                     "name": "",
@@ -122,59 +122,59 @@
                 },
                 "...3": {
                     "name": "",
-                    "designation": "Accountant"
+                    "designation": "Mai Ƙididdiga"
                 },
                 "...4": {
                     "name": "",
-                    "designation": "P.T.A Reps"
+                    "designation": "Wakilin PTA"
                 },
                 "sy": {
                     "name": "Saminu Yusuf",
-                    "designation": "Member"
+                    "designation": "Mamba"
                 },
                 "bl": {
                     "name": "Mal. Badamasi Leko",
-                    "designation": "Member"
+                    "designation": "Mamba"
                 },
                 "ma": {
                     "name": "Magaji Abdullahi",
-                    "designation": "Member"
+                    "designation": "Mamba"
                 },
                 "ka": {
                     "name": "Kamal Abdurrazaq",
-                    "designation": "Member"
+                    "designation": "Mamba"
                 },
                 "ia": {
                     "name": "Ibrahim Awwal",
-                    "designation": "Member"
+                    "designation": "Mamba"
                 }
             }
         },
-        "relationshipNote": "The Board of Management is responsible to the Board of Trustees • No person serves on both boards simultaneously",
-        "readFull": "Read Full Constitution →"
+        "relationshipNote": "Majalisar Gudanarwa tana da alhakin Majalisar Amintattu • Babu wanda zai yi aiki a majalisu biyu a lokaci guda",
+        "readFull": "Karanta Dokokin Cikakku →"
     },
     "leadership": {
-        "title": "Our Leadership",
-        "subtitle": "Dedicated individuals guiding our community with wisdom and integrity."
+        "title": "Jagorancinmu",
+        "subtitle": "Mutane masu sadaukarwa suna jagorantar al’ummarmu da hikima da gaskiya."
     },
     "impact": {
-        "title": "Our Impact in the Community",
-        "subtitle": "Transforming lives through faith, education, and service.",
+        "title": "Tasirinmu a Al’umma",
+        "subtitle": "Muna sauya rayuwa ta hanyar imani, ilimi da hidima.",
         "items": [
             {
-                "title": "Students Educated",
+                "title": "Yawan ɗalibai",
                 "value": "500+",
-                "desc": "Children receiving Islamic and secular education annually"
+                "desc": "Yara masu karɓar ilimin addini da na zamani kowace shekara"
             },
             {
-                "title": "Prayers Hosted",
+                "title": "Adadin Salla da aka gudanar",
                 "value": "10,000+",
-                "desc": "Daily prayers and Jumu'ah congregations each year"
+                "desc": "Sallolin yau da kullum da Juma’a a kowace shekara"
             },
             {
-                "title": "Families Supported",
+                "title": "Iyalan da aka tallafa",
                 "value": "200+",
-                "desc": "Through our charity and zakat distribution programs"
+                "desc": "Ta hanyar shirye‑shirye na zakka da taimako"
             }
         ]
     }
